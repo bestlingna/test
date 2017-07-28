@@ -1,0 +1,178 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	
+}
+.warpper{
+	width: 100%;
+	height: 100%;
+	
+}
+
+.header{
+position: relative;
+  width: 100%;
+  height: 80px;
+  border-bottom: 5px solid #35b558;
+ background-image:url(img/tiao.jpg);
+ background-size:cover;
+  text-align: center;
+ }
+ .header img{
+  width: 150px;
+  height: 55px;
+  margin-top:20px;
+}
+.sidebar {
+	height: 100%;
+	width:320px;
+	position: absolute;
+	top:85px;
+	background-color:#4CAF50;
+	text-align: center;
+}
+.st{
+	width: 100%;
+	height:40px;
+	text-align: center;
+	font-size: 23px;
+	font-weight: 800;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+ul{
+	list-style:none
+}
+a{
+	display: none;
+}
+.title{
+	width: 100%;
+	height:30px;
+	background:#00BCD4;
+	border-bottom:3px solid #fff;
+	cursor:pointer;
+	font-size: 23px;
+    color:#fff;
+}
+.title1{
+	background:#888;
+	color:#000;
+	border-bottom:1px solid #666;
+	cursor:pointer;
+	font-size: 23px;
+}
+.content li{
+	color:#336699;
+	background:#ddd;
+	border-bottom:3px solid #fff;
+	height:30px;
+	width: 100%;
+	text-align: center;
+	cursor:pointer;
+}
+#container{
+	width: 527px;
+	height: 100%;
+	position: absolute;
+	left: 330px;
+	top: 90px;
+}
+#container p{
+  font-size: 40px;
+  text-align: center;
+}
+#container div{
+    display: none;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 100px;
+}
+/*皮肤*/
+.skin{
+	position: absolute;
+	width:150px ;
+	height: 20px;
+	right: 0px;
+	top: 70%;
+
+}
+.skin p{
+	font-size: 11px;
+	line-height: 10px;
+	font-weight: bold;
+	float: left;
+}
+.skin1{
+	width: 10px;
+	height: 10px;
+	background-color: #4caf50;
+	margin-left: 10px;
+	float: left;
+}
+.skin2{
+	width: 10px;
+	height: 10px;
+	background-color: #f6707f;
+	margin-left: 10px;
+	float: left;
+}
+.skin3{
+	width: 10px;
+	height: 10px;
+	background-color: #9fc1c6;
+	margin-left: 10px;
+	float: left;
+}
+.skin div:hover{
+	border:1px solid #aca3a3;
+}
+@media only screen and (min-width:1024px){
+			.wrapper{
+				margin: auto;
+			}
+		}
+		@media only screen and (min-width:600px) and (max-width:1024px){}
+		@media only screen and (max-width:600px){
+			.wrapper{
+				height: 100%;
+				width: 100%;}
+				.header{
+					
+				}
+				.sidebar {
+	            height: 100%;
+	            width:80%;
+	            position: absolute;
+	            top:100px;
+	            left: 10%;
+	            background-color:#4CAF50;
+	            text-align: center;
+                 }
+
+                 .title{
+                 	width: 100%;
+	                height:50px;
+	                background:#00BCD4;
+	               border-bottom:3px solid #fff;
+	              cursor:pointer;
+	              font-size: 23px;
+                   color:#fff;
+                 }
+                 .st{
+	width: 100%;
+	height:70px;
+	text-align: center;
+	font-size: 23px;
+	font-weight: 800;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+a{
+	display: inline;
+}

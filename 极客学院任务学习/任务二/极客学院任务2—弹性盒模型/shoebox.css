@@ -1,0 +1,36 @@
+.shoebox1{
+margin:100px;
+padding:5px;
+width:100px;
+height:100px;
+background-color: orange;
+border:10px solid red;
+
+	
+}
+.shoes1{
+width:100px;
+height:100px;
+background-color:yellow;
+text-align: center;
+	
+}
+.shoebox2{
+margin:100px;
+padding:5px;
+width:130px;
+height:130px;
+background-color: orange;
+border:10px solid red;
+box-sizing:border-box;
+
+	
+}
+.shoes2{
+width:100px;
+height:100px;
+background-color: yellow;
+text-align: center;
+}
+
+

@@ -1,0 +1,63 @@
+.blue{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	position:  absolute;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0 0 50px;
+	padding: 0 0px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.6);
+
+	
+}
+.read{
+	width: 100px;
+	height: 100px;
+	background: red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0 0 -150px;
+	padding: 0 0px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.6);
+
+}
+.orange{
+	width: 100px;
+	height: 100px;
+	background: orange;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -50px;
+	padding: 0 0px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.6);
+
+}
+.icon{
+	width: 100px;
+	height: 100px;
+	background: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0 0 -50px;
+	padding: 0 0px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.6);
+	background:url(iconf.png) no-repeat center;
+	background-size: 24px;
+
+
+	
+}
+.green{
+	width: 100px;
+	height: 100px;
+	background: green;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: 50px 0 0 -50px;
+	padding: 0 0px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.6);

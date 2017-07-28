@@ -1,0 +1,19 @@
+ Listening on http://127.0.0.1:8080
+127.0.0.1 - GET / HTTP/1.1 200 403 - 16.641 ms
+127.0.0.1 - GET /favicon.ico HTTP/1.1 404 24 - 3.763 ms
+127.0.0.1 - GET /baidu.html HTTP/1.1 200 418077 - 5.288 ms
+127.0.0.1 - GET /baidu_8f40233.js HTTP/1.1 200 3606 - 5.439 ms
+127.0.0.1 - GET /baidu_1dbb56e.css HTTP/1.1 200 74230 - 5.564 ms
+127.0.0.1 - GET /jquery-3.2.1.min_34c3e57.js HTTP/1.1 200 87165 - 7.574 ms
+127.0.0.1 - GET /img/mine/blank_796b451b.png HTTP/1.1 404 40 - 5.743 ms
+127.0.0.1 - GET /null HTTP/1.1 404 17 - 1.459 ms
+127.0.0.1 - GET /baidu.html HTTP/1.1 304 - - 1.613 ms
+127.0.0.1 - GET /baidu_1dbb56e.css HTTP/1.1 304 - - 4.585 ms
+127.0.0.1 - GET /jquery-3.2.1.min_34c3e57.js HTTP/1.1 304 - - 4.912 ms
+127.0.0.1 - GET /baidu_8f40233.js HTTP/1.1 304 - - 4.611 ms
+127.0.0.1 - GET /img/mine/blank_796b451b.png HTTP/1.1 404 40 - 1.343 ms
+127.0.0.1 - GET /baidu.html HTTP/1.1 200 323131 - 2.605 ms
+127.0.0.1 - GET /baidu_8f40233.js HTTP/1.1 200 3606 - 18.469 ms
+127.0.0.1 - GET /baidu_1dbb56e.css HTTP/1.1 200 74230 - 7.706 ms
+127.0.0.1 - GET /jquery-3.2.1.min_34c3e57.js HTTP/1.1 200 87165 - 8.435 ms
+127.0.0.1 - GET /img/mine/blank_796b451b.png HTTP/1.1 404 40 - 4.032 ms

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<style type="text/css">
+	</style>
+	<title>求数组中出现次数最多的元素</title>
+</head>
+<body>
+
+	<script >
+		function maxtime(){
+			var arr = ['a','x','b','d','m','a','k','m','p','j','a'];
+// 一个数组
+var newarr = [];
+var maxarr= [];
+var indexarr=[];
+var maxindexarr=[];
+var n;
+	//定义数组 变量
+	for(var i=0;i<arr.length;i++){
+		
+		for(var j=i+1;j<arr.length;j++){
+			if(arr[i]==arr[j]){
+				newarr.push(arr[j]);
+				indexarr.push(j);
+			}
+		}
+		
+		newarr.unshift(arr[i]);
+		if(newarr.length>maxarr.length){
+			maxarr = newarr;
+		}
+		newarr=[];
+		
+		indexarr.unshift(i);
+		if(indexarr.length>maxindexarr.length){
+			maxindexarr=indexarr;
+		}
+		indexarr=[];
+	}
+	
+	document.write("数组中出现次数最多的是"+maxarr[0]);
+	document.write("出现次数为"+maxarr.length);
+	document.write("出现位置是"+maxindexarr);
+}
+window.onload=maxtime;
+
+</script>
+</body>
+</html>

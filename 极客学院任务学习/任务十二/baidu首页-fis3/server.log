@@ -1,0 +1,17 @@
+ Listening on http://127.0.0.1:8080
+127.0.0.1 - GET / HTTP/1.1 200 777 - 10.720 ms
+127.0.0.1 - GET /favicon.ico HTTP/1.1 404 24 - 5.586 ms
+127.0.0.1 - GET /baidu.html HTTP/1.1 200 418074 - 4.482 ms
+127.0.0.1 - GET /baidu_1dbb56e.css HTTP/1.1 200 74230 - 13.984 ms
+127.0.0.1 - GET /jquery-3.2.1.min_34c3e57.js HTTP/1.1 200 87165 - 10.279 ms
+127.0.0.1 - GET /baidu_da9fa8f.js HTTP/1.1 200 3191 - 11.808 ms
+127.0.0.1 - GET /img/mine/blank_796b451b.png HTTP/1.1 404 40 - 22.925 ms
+127.0.0.1 - GET /null HTTP/1.1 404 17 - 0.985 ms
+127.0.0.1 - GET /img/news/news_88aeb6fe.png HTTP/1.1 404 39 - 0.684 ms
+127.0.0.1 - GET /undefined HTTP/1.1 404 22 - 0.874 ms
+127.0.0.1 - GET /baidu.html HTTP/1.1 304 - - 14.680 ms
+127.0.0.1 - GET /baidu_1dbb56e.css HTTP/1.1 304 - - 2.469 ms
+127.0.0.1 - GET /jquery-3.2.1.min_34c3e57.js HTTP/1.1 304 - - 3.808 ms
+127.0.0.1 - GET /baidu_da9fa8f.js HTTP/1.1 304 - - 3.767 ms
+127.0.0.1 - GET /img/mine/blank_796b451b.png HTTP/1.1 404 40 - 0.731 ms
+127.0.0.1 - GET /img/news/news_88aeb6fe.png HTTP/1.1 404 39 - 0.912 ms

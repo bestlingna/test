@@ -1,0 +1,293 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-image: url(img/banan.jpeg);
+}
+.warpper{
+	width: 100%;
+	height: 100%;
+	
+}
+.header{
+	margin-top: 80px;
+	margin-bottom: 40px;
+text-align: center;
+
+	}
+#logo{
+	width: 150px;
+	height: 55px;
+    margin: 0 auto;
+	text-align: -webkit-center;
+
+}
+#logo img{
+	width: 100%;
+	height:100%;
+}
+#container{
+	width: 780px;
+	height: 380px;
+	background-color: white;
+	box-shadow: 10px 10px 30px 7px #c8c8c8;
+    margin: 0 auto;
+    position: relative;
+}
+.form{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 60px;
+	top:50px;
+}
+.head{
+	font-size: 24px;
+	color:#888585;
+	font-weight: bold;
+	margin-left: 60px;
+	position: absolute;
+	top:15px;
+	
+}
+.controls{
+	width: 100%;
+	height: 64px;
+	position: relative;
+}
+.password-label{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 12px;
+	left: 4px;
+	opacity: 0.4;
+}
+.password-label2{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 12px;
+	left: 3px;
+}
+
+.control-group input{
+	margin-top: 5px;
+    margin-bottom:20px;
+	width: 266px;
+    height: 40px;
+    border: 1px solid #ff6711;
+    padding-left: 34px;
+}
+
+.control-group input:focus{
+	
+	border:1px solid #2e8bb9;
+}
+
+
+.control-group label{
+	font-size: 20px;
+	font-weight: bold;
+	color:#32a752;
+}
+.controls2{
+	font-size: 12px;
+	color: #999;
+	width: 300px;
+}
+.controls2 a{
+	margin-left: 190px;
+}
+.btn{
+	width: 300px;
+	height: 40px;
+	background-color: #35b558;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	border:1px solid #35b558;
+}
+.btn:hover{
+border-top:2px solid #c1c0c0;
+border-left:2px solid #a0a0a0;
+border-right:2px solid #7b7a7a;
+border-bottom:2px solid #7b7a7a;
+border-radius: 1px;
+}
+.aside{
+	width: 300px;
+	height: 280px;
+	position: absolute;
+	right: 20px;
+	top:80px;
+}
+.nR{
+	font-size: 18px;
+	color:black;
+	
+}
+#Re{
+	font-size: 18px;
+	color:  #35b558;
+	font-weight: bold;	
+}
+.As{
+	font-size: 14px;
+	color: #999;
+	text-align: center;
+}
+.anotherWay{
+	width: 300px;
+	height: 120px;
+	position: absolute;
+	top:80px;
+}
+.anotherWayIcon{
+	width: 300px;
+	position: absolute;
+	top: 50px;
+}
+.anotherWayIcon div{
+
+	width: 48px;
+	height: 48px;
+	float: left;
+	margin-right: 15px;
+}
+.anotherWayIcon div:hover{
+	border: 2px solid #35b558;
+	border-radius: 10px;
+}
+@media only screen and (min-width:1024px){
+			.wrapper{
+				margin: auto;
+		 }
+		}
+		@media only screen and (min-width:500px) and (max-width:1024px){}
+		@media only screen and (max-width:500px){
+			.wrapper{}
+				#container{
+	width: 90%;
+	height: 348px;
+	background-color: white;
+	box-shadow: 10px 10px 30px 7px #c8c8c8;
+    margin: 0 auto;
+    position: relative;
+}
+.head {
+    font-size: 19px;
+    color: #888585;
+    font-weight: bold;
+    margin-left: 6%;
+    position: absolute;
+    top: 10px;
+}
+.form{
+	width: 80%;
+	height: 222px;
+	position: absolute;
+	left: 10%;
+	top:38px;
+}
+.control-group input{
+	margin-top: 5px;
+    margin-bottom:20px;
+	width: 80%;
+    height:40px;
+    border: 1px solid #ff6711;
+    padding-left:20%;
+}
+.controls2 {
+	font-size: 12px;
+    color: #999;
+    width: 100%;
+}
+.controls2 a{
+	
+    width: 50px;
+    position: absolute;
+    right: 0;
+}
+.controls {
+	height: 56px;
+}
+.btn{
+	width: 100%;
+	height: 40px;
+	background-color: #35b558;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	border:1px solid #35b558;
+	padding-left: 
+}
+.aside {
+    width: 70%;
+    height: 92px;
+    position: absolute;
+    right: 15%;
+    top: 249px;
+    text-align: center;
+}
+#logo{
+	width: 100px;
+	height: 37px;
+	margin: 0 auto;
+	text-align: -webkit-center;
+
+}
+.header{
+	margin-top: 13px;
+	margin-bottom: 15px;
+text-align: center;
+
+	}
+	.control-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #32a752;
+}
+.nR {
+    font-size: 10px;
+    color: black;
+}
+#Re {
+    font-size: 10px;
+    color: #35b558;
+    font-weight: bold;
+}
+.As{
+	font-size: 10px;
+	color: #999;
+	text-align: center;
+}
+.anotherWay {
+    width: 100%;
+    height: 62px;
+    position: absolute;
+    top:27px;
+    text-align: center;
+}
+.anotherWayIcon {
+    
+    width: 122px;
+    position: absolute;
+    top: 26px;
+    left: 50%;
+    margin-left: -61px;
+
+}
+.anotherWayIcon img{
+	width: 24px;
+	height:24px;
+	text-align: center;
+}
+.anotherWayIcon div {
+   width: 24px;
+    height: 24px;
+   
+  
+   
+}

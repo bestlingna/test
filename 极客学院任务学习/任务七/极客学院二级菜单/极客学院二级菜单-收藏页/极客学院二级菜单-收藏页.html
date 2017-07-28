@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<meta charset="UTF-8"/>
+	<style type="text/css"></style>
+	<link rel="stylesheet" type="text/css" href="jike-soucang.css">
+	<title>极客学院学习中心</title>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="jike.js"></script>
+</head>
+<body class="no_header">
+<!--header-->
+	<div id="header">
+		<div class="w-1000 relative">
+			<a href="http://www.jikexueyuan.com/" class="logo">
+			<img src="http://e.jikexueyuan.com/headerandfooter/images/logo.png?t=1495686193000" height="40" width="109">
+			</a>
+			<!--nav-->
+			<nav>
+				<ul class="header-nav">
+					<li><a href="http://www.jikexueyuan.com/">首页</a></li>
+					<!--职业学院-->
+					<li>职业学院<i class="arrow-icon"></i>
+						<div class="submenu school-list">
+							<h3>前端学院</h3>
+							<a href="http://www.jikexueyuan.com/zhiye/web"><i class="web-icon"></i>Web 前端工程师</a>
+							<a href="http://www.jikexueyuan.com/zhiye/wechatapp"><i class="wechat-icon"></i>微信小程序工程师</a>
+							<h3>后端学院</h3>
+							<a href="http://www.jikexueyuan.com/zhiye/php"><i class="php-icon"></i>PHP 工程师<span class="new-icon">New</span></a>
+							<a href="http://www.jikexueyuan.com/zhiye/python"><i class="python-icon"></i>Python Web工程师</a>
+							<a href="http://www.jikexueyuan.com/zhiye/go"><i class="go-icon"></i>Go语言工程师</a>
+                        <!--<a href="//j.jikexueyuan.com/train/php?huodong=jiuye_php_in"><i class="php-icon"></i>PHP工程师</a>
+                        <a href="//j.jikexueyuan.com/train/javaweb?huodong=jiuye_javaweb_guide"><i class="java-icon"></i>Java Web工程师</a>-->
+                        <h3>移动学院</h3>
+                        <a href="http://www.jikexueyuan.com/zhiye/android"><i class="android-icon"></i>Android工程师</a>
+                        <a href="http://www.jikexueyuan.com/zhiye/ios"><i class="ios-icon"></i>iOS工程师</a>
+                    </div>
+                </li>
+                <!--会员课程-->
+                <li>会员课程<i class="arrow-icon"></i>
+                	<div class="submenu vip-lesson">
+                		<a href="http://www.jikexueyuan.com/course/"><i class="kck-icon"></i>课程库<span>2500+</span></a>
+                		<a href="http://ke.jikexueyuan.com/zhiye/"><i class="zyljt-icon"></i>职业路径图<span>9</span></a>
+                		<a href="http://www.jikexueyuan.com/path/"><i class="zstxt-icon"></i>知识体系图<span>24</span></a>
+                		<a href="http://ke.jikexueyuan.com/xilie/"><i class="xlkc-icon"></i>系列课程<span>101</span></a>
+                		<a href="http://www.jikexueyuan.com/tag/"><i class="kcbq-icon"></i>课程标签<span>4000+</span></a>
+                		<a href="http://www.jikexueyuan.com/vip/"><i class="vip-icon"></i>VIP会员购买<span>30/月  260/年</span></a>
+                	</div>
+                </li>
+                <!--极客社区-->
+                <li>极客社区<i class="arrow-icon"></i>
+                	<div class="submenu vip-lesson">
+                		<a href="http://wenda.jikexueyuan.com/"><i class="jswd-icon"></i>技术问答<span>20000+</span></a>
+                		<a href="http://wiki.jikexueyuan.com/"><i class="wiki-icon"></i>Wiki<span>351</span></a>
+                		<a href="http://qun.jikexueyuan.com/"><i class="sq-icon"></i>社群<span>7000+</span></a>
+                		<a href="http://download.jikexueyuan.com/"><i class="zygx-icon"></i>资源下载<span>3000+</span></a>
+                	</div>
+                </li>
+            </ul>
+        </nav>
+        <!--nav结束 -->
+        <!--搜索、注册、登录-->
+        <div class="icon-box">
+        <!--搜索-->
+            <span class="search-icon" id="search-btn"></span>
+            <span class="app-icon loginlist relative" id="appicon">
+                    <div class="submenu">
+                        <i class="top-icon"></i>
+                        <!--图片-->
+                        <img src="http://e.jikexueyuan.com/headerandfooter/images/heade-rwm.png?t=1495686193000">
+                    </div>
+            </span>
+           <!--手机二维码-->
+            <span class="noti-icon" id="openNoti">
+            <em class="unread-count unread-style" style="display: none;"></em>
+            </span>
+
+            <span class="relative loginlist logged" id="loginlist">
+            <a href="http://my.jikexueyuan.com/setting/user/">
+            <img src="https://assets.jikexueyuan.com/user/avtar/default.gif" id="userpoto"></a>
+            <i id="uservip-icon" class="year-icon"></i>
+            <dl class="submenu">
+            <i class="top-icon"></i>
+            <dd id="getUserLevel">
+            <a href="http://my.jikexueyuan.com/user/myvip" class="rzno-vip"></a>
+            <a href="http://my.jikexueyuan.com/user/myvip" class="year-vip"></a>
+            </dd>
+            <dd>
+            <a href="http://xue.jikexueyuan.com/">
+            <i class="xxzx-icon"></i>学习中心</a>
+            </dd>
+            <dd>
+            <a href="http://my.jikexueyuan.com/0HjWXkqjU">
+            <i class="grzy-icon"></i>
+            个人主页
+            </a>
+            </dd>
+            <dd>
+            <a href="http://my.jikexueyuan.com/setting/user/">
+            <i class="zhsz-icon"></i>账号设置
+            </a>
+            </dd>
+            <dd>
+            <a href="http://passport.jikexueyuan.com/submit/logout">
+            <i class="tc-icon"></i>
+            退出登录
+            </a>
+            </dd>
+            </dl>
+            </span>
+             <!--消息通知 -->
+            <div id="newMessageBox" class="messagebox" style="display: none;">
+                <h3><em class="message-title">消息通知</em><em id="setRead" class="icon-read" style="display: none;"></em></h3>
+                <div class="message-list" style="height: 170px;">
+                    <!-- 加载动画 -->
+                    <div id="spinner" style="display: none;">
+                        <div class="rect1"></div>
+                        <div class="rect2"></div>
+                        <div class="rect3"></div>
+                        <div class="rect4"></div>
+                        <div class="rect5"></div>
+                    </div>
+                    <!-- 没有消息 -->
+                    <div class="no-message" style="display: block;">
+                        <img src="http://e.jikexueyuan.com/headerandfooter/images/no-message.png?t=1495686193000">
+                        暂没有新消息哦～
+                    </div>
+                </div>
+                <a href="//www.jikexueyuan.com/member/notifications/" id="linkToMember" class="link-member">全部消息&gt;&gt;</a>
+            </div>
+        </div>
+        <!--搜索框-->
+        <div class="searchbox" id="searchbox">
+        	<i class="close-icon" id="close-btn"></i>
+        	<i class="search-icon" id="search-btn"></i>
+        	<input id="web_search_header" placeholder="搜索课程、问答或Wiki" value="">
+        	<div class="tagbox">
+        		<a href="http://search.jikexueyuan.com/course/?q=Android">Android</a>
+        		<a href="http://search.jikexueyuan.com/course/?q=iOS">iOS</a>
+        		<a href="http://search.jikexueyuan.com/course/?q=HTML5">HTML5</a>
+        	</div>
+        </div>
+    </div>
+</div>
+<!--container-->
+<div class="container">
+	<!--home-crumb-->
+	<div class="home-crumb">
+		<span><a href="http://www.jikexueyuan.com/">首页</a></span>
+		<span class="crumb-arrow">学习中心</span>
+	</div>
+    <!--右边导航栏nav-cont-->
+	<div class="nav-cont">
+		<nav class="nav-block">
+			<ul>
+				<li class="person">
+					<i></i>
+					<img src="https://assets.jikexueyuan.com/user/avtar/default.gif" alt="我的头像">
+					<span>bestlingna</span>
+				</li>
+				<a href="../secondLevelMenu.html">
+					<li class="select classhover">
+						<i class="green-class"></i>
+						<span class="mar-left active-green">我的课程</span>
+					</li>
+				</a>
+				<a href="../极客学院二级菜单-我的职业/极客学院二级菜单-我的职业.html">
+					<li class="select careerhover">
+						<i class="career-img"></i>
+						<span>我的职业</span>
+					</li>
+				</a>
+				<a href="../极客学院二级菜单-我的就业班/极客学院二级菜单-我的就业班.html">
+					<li class="select employhover">
+						<i class="employ-img"></i>
+						<span>我的就业班</span>
+					</li>
+				</a>
+			</ul>
+		</nav>
+	</div>
+
+    <!--中间主页main-cont-->
+    <div class="main-cont">
+    <!--头部导航-->
+    	<section class="home-myclass">
+    		<ul class="navbar">
+    			<li><a href="../secondLevelMenu.html" class="">在学</a></li>
+    			<li><a href="../极客学院二级菜单-学完页/极客学院二级菜单-学完页.html" class="">学完</a></li>
+    			<li><a href="../极客学院二级菜单-收藏页/极客学院二级菜单-收藏页.html" class=" navbar-li-active ">收藏</a>
+    			</li>
+    		</ul> 
+            <!--中间内容-->
+    		<section class="no-purchase">
+            <!--图片-->
+    			<img src="https://jiuye-static.jikexueyuan.com/fuwu/xue/images/nopurchase.jpg">
+    			<p>你还没有收藏哦</p>
+    		</section>
+    	</section>
+</div>
+	
+	</div>
+
+	<div id="footer" class="mar-t50" style="position: relative; width: 100%; bottom: 0px;">
+		<link rel="stylesheet" href="./我的课程 - 极客学院学习中心_files/footer.css">
+		<div class="w-1000 copyright">
+			Copyright © 2013-2017&nbsp;<strong><a href="http://www.jikexueyuan.com/" target="_blank">jikexueyuan.com</a></strong> All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210
+		</div>
+	</div>
+</body>

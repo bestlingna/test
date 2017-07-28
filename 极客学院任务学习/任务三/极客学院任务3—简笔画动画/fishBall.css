@@ -1,0 +1,207 @@
+.fish{}
+
+.body{}
+ .back{   
+    width: 300px;
+    height: 250px;
+    border: 7px solid #2196f3;
+    border-top-left-radius: 100% 100%;
+    border-top-right-radius: 100% 100%;
+    border-bottom-left-radius: 100% 100%;
+    border-bottom-right-radius: 100% 100%;
+    background: none;
+    position: absolute;
+    top: 110px;
+    left: 530px;
+}
+.eye{
+    width: 45px;
+    height: 54px;
+    border: 7px solid #2196f3;
+    border-radius: 50% 50%;
+    background: #fff;
+    position: absolute;
+     top:180px;
+    left:595px;
+
+}
+
+.innereye{
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    width: 21px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #2196f3;
+    background: #2196f3;
+}
+    
+.top-mouth{
+    position: absolute;
+    top: 65px;
+    left: 510px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: none;
+    border: 7px solid #2196f3;
+    transform: rotate(0deg);
+    clip: rect(107px,114px,214px,27px);
+    /* -webkit-animation: an1 2s infinite linear; */
+    /* -webkit-animation: an1 2s infinite linear; */
+}
+
+.bottom-mouth{
+    position: absolute;
+    top: 108px;
+    left: 430px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: none;
+    border: 7px solid #2196f3;
+    transform: rotate(-15deg);
+    clip: rect(107px,177px,214px,107px);
+    /* -webkit-animation: an1 2s infinite linear; */
+/*-webkit-animation: an1 2s infinite linear;*/
+}
+.top-tail1{
+    position: absolute;
+    top: 123px;
+    left: 809px;
+    width: 400px;
+    height: 400px;
+    border-radius:100%;
+    background-color: none;
+    border: 7px solid #2196f3;
+    transform: rotate(30deg);
+    clip: rect(0px,57px,207px,0px);
+    /* -webkit-animation: an1 2s infinite linear; */
+    /* -webkit-animation: an1 2s infinite linear; */
+}
+.top-tail2{
+    position: absolute;
+    top: -78px;
+    left: 545px;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background-color: none;
+    border: 7px solid #2196f3;
+    transform: rotate(181deg);
+    clip: rect(0px,40px,207px,0px);
+    /* -webkit-animation: an1 2s infinite linear; */
+    /* -webkit-animation: an1 2s infinite linear; */
+}
+ .bottom-tail1{
+    position: absolute;
+    top: -49px;
+    left: 800px;
+    width: 400px;
+    height: 400px;
+    border-radius:100%;
+    background-color: none;
+    border: 7px solid #2196f3;
+    transform: rotate(-76deg);
+    clip: rect(0px,57px,207px,0px);
+    /* -webkit-animation: an1 2s infinite linear; */
+/*-webkit-animation: an1 2s infinite linear;*/
+}
+.bottom-tail2{
+    position: absolute;
+    top: 158px;
+    left: 546px;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background-color: none;
+    border: 7px solid #2196f3;
+    transform: rotate(143deg);
+    clip: rect(0px,40px,207px,0px);
+/*-webkit-animation: an1 2s infinite linear;*/
+}
+.ball{}
+.ball1{
+    width: 30px;
+    height: 30px;
+    border: 7px solid #2196f3;
+    border-radius: 100% ;
+    background: none;
+    position: absolute;
+    top: 250px;
+    left: 450px;
+-webkit-animation:fadeInRightBiga 2s .2s ease-in both;
+-moz-animation:fadeInRightBig 2s .2s ease-in both;}
+
+@-webkit-keyframes fadeInRightBiga{
+0%{opacity:0;-webkit-transform:translate(90px,10px)}
+25%{opacity:0;-webkit-transform:translate(90px,10px)}
+50%{opacity:0;-webkit-transform:translate(60px,6px)}
+100%{opacity:1;-webkit-transform:translateX(0)}
+}
+@-moz-keyframes fadeInRightBiga{
+0%{opacity:0;-webkit-transform:translate(90px,90px)}
+50%{opacity:0;-webkit-transform:translate(90px,90px)}
+50%{opacity:0;-webkit-transform:translate(60px,6px)}
+100%{opacity:1;-webkit-transform:translateX(0)}
+}
+}
+
+.ball1:hover{border-color:#999;}
+
+.ball2{
+    width: 60px;
+    height: 60px;
+    border: 7px solid #2196f3;
+    border-radius: 100% ;
+    background: none;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+-webkit-animation:fadeInRightBigb 1.5s .2s ease-in both;
+-moz-animation:fadeInRightBig 1.5s .2s ease-in both;}
+
+@-webkit-keyframes fadeInRightBigb{
+
+0%{opacity:0;-webkit-transform:translate(200px,70px)}
+25%{opacity:0;-webkit-transform:translate(200px,70px)}
+50%{opacity:0;-webkit-transform:translate(140px,50px)}
+100%{opacity:1;-webkit-transform:translateX(0)}
+}
+@-moz-keyframes fadeInRightBigb{
+0%{opacity:0;-webkit-transform:translate(200px,70px)}
+0%{opacity:0;-webkit-transform:translate(200px,70px)}
+50%{opacity:0;-webkit-transform:translate(140px,50px)}
+100%{opacity:1;-webkit-transform:translateX(0)}
+}
+
+.ball3{
+    width: 80px;
+    height: 80px;
+    border: 7px solid #2196f3;
+    border-radius: 100% ;
+    background: none;
+    position: absolute;
+    top: 90px;
+    left: 180px;
+-webkit-animation:fadeInRightBigc 1s .2s ease-in both;
+-moz-animation:fadeInRightBig 1s .2s ease-in both;}
+
+@-webkit-keyframes fadeInRightBigc{
+
+0%{opacity:0;-webkit-transform:translate(320px,170px)}
+30%{opacity:0;-webkit-transform:translate(220px,118px)}
+100%{opacity:1;-webkit-transform:translateX(0)}
+}
+@-moz-keyframes fadeInRightBigc{
+0%{opacity:0;-webkit-transform:translate(320px,170px)}
+30%{opacity:0;-webkit-transform:translate(220px,118px)}
+100%{opacity:1;-webkit-transform:translateX(0)}
+}
+
+
+
+
+
+

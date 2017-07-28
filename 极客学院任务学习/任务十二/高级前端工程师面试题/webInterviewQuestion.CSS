@@ -1,0 +1,58 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	
+}
+.warpper{
+	width: 100%;
+	height: 100%;
+	
+}
+.header{
+	margin-top: 60px;
+	margin-bottom: 10px;
+    text-align: center;
+   }
+.header span{
+	font-size: 45px;
+	color: #2b86af;
+	font-weight: 800;
+}
+.header img{
+	margin-top: 10px;
+	width: 100%;
+	height:10px;
+}
+.article{
+	width: 1000px;
+	height: 2100px;
+	position: absolute;
+	top: 180px;
+    left: 50%;
+    margin-left:-500px;
+   }
+ .stage{
+   	width: 100%;
+    height: 1800px;
+    background-color:#cbd2f1;
+    opacity: 0.8;
+    border: 1px solid #959596;
+    box-shadow: inset 0px 0px 20px 10px #7f8bca;
+}
+
+.page{
+  width: 80%;
+  height: 1500px;
+  margin: 80px auto;
+}
+  
+ p{
+	font-size: 15px;
+
+}
+  ul li{
+   font-size: 15px;
+   line-height: 27px;
+}

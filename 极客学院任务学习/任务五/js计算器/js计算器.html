@@ -1,0 +1,229 @@
+<!DOCTYPE>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<meta charset="UTF-8"/>
+	<title>
+		计算机
+	</title>
+	
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.warpper{
+			width: 100%;
+			height: 800px;
+			position: relative;
+		}
+		.box{
+			width: 600px;
+			height: 600px;
+			margin: 0 auto;
+			position: relative;
+			background: #fdf6f6;
+		}
+		.counter{
+			width: 400px;
+			height: 500px;
+			position: absolute;
+			top: 50px;
+			left: 100px;
+			background:#f6dbe3;
+			border-radius: 10%;
+			border:3px solid #cc7387 ;
+			box-shadow: inset 0px 0px 70px 30px #cb758d;
+		}
+		.header{
+			font-size: 20px;
+			font-family: SimHei;
+			font-weight: bold;
+			color:#d1d1d1;
+			text-align: center;
+			margin-top:10px;
+			margin-bottom: 10px;
+
+		}
+		.output{
+			width: 70%;
+			height: 10%;
+			background:#ffffff;
+			margin: 0 auto;
+			border: 1px solid #f1c1cc;
+			font-size: 20px;
+			color:#605c5d;
+			line-height: 70px;
+		}
+		.keyboard{
+			width:70%;
+			height:65%;
+			position: absolute;
+			left: 15%;
+			top:22%;
+
+		}
+		.keyboard ul{
+			width: 100%;
+			height: 100%;
+			padding:0; 
+			height:auto; 
+
+		}
+		.keyboard li{ 
+			list-style:none; 
+			float:left; 
+			width:24%; 
+			height:20%; 
+			display:inline; 
+			line-height:65px; 
+			font-size:23px; 
+			color: #ac506b;
+			background-color:#f6dbe3; 
+			text-align: center;
+			border-radius: 20%;
+			border: 1px solid  #ffffff;
+			margin:-1px;
+
+		} 
+		li:hover{
+			background-color:#e4a0b3;
+		}
+		.footer{
+			width: 80%;
+			height: 12%;
+			position: absolute;
+			top:88%;
+			left: 10%;
+		}
+		.wrongout{
+			width: 100%;
+			height: 60%;
+			text-align: center;
+		}
+		.footerw{
+			font-size: 10px;
+			color: #b4afaf;
+		}
+		.footerw a{
+			margin-left: 50%;
+		}
+
+	</style>
+	<link rel="stylesheet" type="text/css" href="Baidu.css">
+</head>
+<body>
+	<div class="warpper">
+		<div class="box">
+			<div class="counter">
+				<div class="header"><span>calculator</span></div>
+
+				<div class="output" id="sreennum"></div>
+				<div class="keyboard">
+					<ul>
+					     <li class="tool" onclick="">☺</li>
+					    <li class="tool" onclick="clearNum()">C</li>
+					    <li class="tool" onclick="eva()">=</li> 
+					    <li class="tool" onclick="back()">←</li> 
+						<li id="num1" onclick="inputNum(1)">1</li> 
+						<li id="num2"onclick="inputNum(2)">2</li> 
+						<li id="num3"onclick="inputNum(3)">3</li> 
+						<li id="num4"onclick="inputNum(4)">4</li> 
+						<li id="num5"onclick="inputNum(5)">5</li> 
+						<li id="num6" onclick="inputNum(6)">6</li> 
+						<li id="num7"onclick="inputNum(7)">7</li> 
+						<li id="num8"onclick="inputNum(8)">8</li> 
+						<li id="num9" onclick="inputNum(9)">9</li> 
+						<li id="num0" onclick="inputZero(0)">0</li> 
+						<li class="tool" onclick="inputCal(0)">+</li> 
+						<li class="tool" onclick="inputCal(1)">-</li> 
+						<li class="tool" onclick="inputCal(2)">×</li> 
+						<li class="tool" onclick="inputCal(3)">÷</li> 
+						<li id="num00"onclick="inputZero(0)">00</li> 
+						<li id="num."onclick="inputCal(4)">.</li> 
+						
+						
+					</ul> 
+				</div>
+
+				<div class="footer">
+					<div class="wrongout"></div>
+					<div class="footerw"><span>欢迎使用计算器</span><a href="">反馈</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	//输入数字不包括0
+	function inputNum (num) {
+		var sreenValue = document.getElementById("sreennum").innerHTML;
+	    num=sreenValue+num;
+		document.getElementById("sreennum").innerHTML=num;
+		}
+	//输入0	并验证0前面的字符不是除号
+    function inputZero(num){
+    	var sreenValue = document.getElementById("sreennum").innerHTML;
+    	var n=sreenValue.charAt(sreenValue.length-1);//得到输入框中的字符串，并取得最后一位。
+    	var m="/";
+        if(n!=m){
+        num=sreenValue+num;
+        document.getElementById("sreennum").innerHTML=num;
+    	}
+    	else{
+    	document.getElementById("sreennum").innerHTML="被除数不能为0";
+    	}
+    }
+    
+
+    //输入运算符号
+	  var arr=['+','-','*','/','.'];
+	function inputCal(m){
+		var sreenValue = document.getElementById("sreennum").innerHTML;
+		var n=sreenValue.charAt(sreenValue.length-1);
+	
+		for(var i=0;i<5;i++){
+     //判断运算符号前不能为运算符号及'.'。
+			if(n==arr[i]){arr[m]="";}
+		}
+			//判断运算符号前面不能为空。
+			if(sreenValue.length==0){arr[m]="";}
+             
+      	sreenValue=sreenValue+arr[m];
+         document.getElementById("sreennum").innerHTML=sreenValue;
+         arr=['+','-','*','/','.'];
+	}
+	
+
+
+	//清零
+	function clearNum() {
+            //清0
+            document.getElementById("sreennum").innerHTML = null;
+            document.getElementById("sreennum").focus();
+        }
+       
+
+
+        //退格
+        function back() {
+            //退格
+           var sreenValue = document.getElementById("sreennum").innerHTML;
+            sreenValue = sreenValue.substring(0, sreenValue.length-1);
+            document.getElementById("sreennum").innerHTML=sreenValue;
+        }
+        
+
+        //计算输入结果
+        function eva() {
+            var sreenValue = document.getElementById("sreennum").innerHTML;
+                sreenValue = parseFloat((eval(sreenValue)).toFixed(8));
+
+                if (sreenValue.length>22) {
+                	 sreenValue = sreenValue.substring(0, 22);
+                }
+                document.getElementById("sreennum").innerHTML=sreenValue;
+        }
+	</script>	
+</body>
+</html>

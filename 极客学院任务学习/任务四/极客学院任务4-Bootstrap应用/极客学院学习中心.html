@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<meta charset="UTF-8"/>
+	<style type="text/css"></style>
+	<link rel="shortcut icon" href="img/jike.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="jikestudy.css">
+	<title>极客学习中心</title>
+	<script language = JavaScript>
+function showmenu(id) {
+ var list = document.getElementById("list"+id);
+ var menu = document.getElementById("menu"+id);
+ if (list.style.display=="none") {
+  document.getElementById("list"+id).style.display="block";
+  menu.className = "title1";
+ }else {
+  document.getElementById("list"+id).style.display="none";
+  menu.className = "title";
+ }
+} 
+</script>
+<script>
+  function showcontainer(n){
+  var c = document.getElementById("c"+n);
+ var l = document.getElementById("l"+n);
+ if (c.style.display=="none") {
+  document.getElementById("c"+n).style.display="block";
+  for (var i=1;i<=11;i++){
+  var b = document.getElementById("c"+i);
+  if (b!==c) {document.getElementById("c"+i).style.display="none";
+}
+ }
+ }else {
+  document.getElementById("c"+n).style.display="none";
+ 
+ }
+}
+</script>
+<script language = JavaScript>
+function phone() {
+  var phoneWidth=document.body.clientWidth;
+  var phoneHeight=document.body.clientHeight;
+  var container=document.getElementById("container");
+    var phoneA=document.getElementsByTagName("a");
+  if(phoneWidth<500){
+    container.style.display="none";
+        phoneA.style.display="inline";
+  }
+
+}
+window.onload=phone;
+</script>
+<script type="text/javascript">
+  function skinChange(m){
+ var header=document.getElementById("headerAll");
+  var sidebar=document.getElementById("sidebarAll")
+  if(m==1){
+    header.style.backgroundImage="url(img/tiao.jpg)";
+    header.style.borderBottomColor="#35b558";
+    sidebar.style.backgroundColor="#4CAF50";
+  }
+  if (m==2) {
+    header.style.backgroundImage="url(img/tiaoP.jpg)";
+    header.style.borderBottomColor="#f6707f";
+    sidebar.style.backgroundColor="#f6707f";
+  }
+   if(m==3){
+    header.style.backgroundImage="url(img/tiaoB.jpg)";
+    header.style.borderBottomColor="#9fc1c6";
+    sidebar.style.backgroundColor="#9fc1c6";
+   }
+  }
+</script>
+</head>
+<body>
+<div class="wapper">
+<div class="header" id="headerAll">
+ 
+
+	<img src="img/logo.png">
+  <div class="skin">
+  <p>选择皮肤</p>
+  <div class="skin1" id="skinG" onclick="skinChange(1)"></div>
+  <div class="skin2" id="skinP" onclick="skinChange(2)"></div>
+  <div class="skin3" id="skinB" onclick="skinChange(3)"></div>
+ 
+  </div>
+</div>
+<div class="sidebar" id="sidebarAll">
+<div class="st">极客学院学习中心</div>
+<div class="title" id="menu1" onclick="showmenu('1') ">我的课程</div>
+  <div id="list1" class="content" style="display:none">
+   <ul>
+    <li id="l1" onclick="showcontainer('1') ">在学课程<a  target="view_window" href="网页分支/在学课程.html">请点击</a></li>
+    <li id="l2" onclick="showcontainer('2') ">已学完课程<a target="view_window" href="网页分支/已学完课程.html">请点击</a></li>
+    <li id="l3" onclick="showcontainer('3') ">收藏课程<a  target="view_window" href="网页分支/收藏课程.html">请点击</a></li>
+    </ul>
+</div>
+
+<div class="title" id="menu2" onclick="showmenu('2') ">我的就业班</div>
+  <div id="list2" class="content" style="display:none">
+   <ul>
+    <li id="l4" onclick="showcontainer('4') ">就业班信息<a  target="view_window" href="网页分支/就业班信息.html">请点击</a></li>
+    <li id="l5" onclick="showcontainer('5') ">我的就业班福利<a target="view_window"  href="网页分支/我的就业班福利.html">请点击</a></li>
+    </ul>
+</div>
+<div class="title" id="menu3" onclick="showmenu('3') ">极客社区</div>
+  <div id="list3" class="content" style="display:none">
+   <ul>
+    <li id="l6" onclick="showcontainer('6') ">极客论坛<a  target="view_window" href="网页分支/极客论坛.html">请点击</a></li>
+    <li id="l7" onclick="showcontainer('7') " >极客冲浪<a target="view_window" href="网页分支/极客冲浪.html">请点击</a></li>
+    <li id="l8" onclick="showcontainer('8') ">优秀网页<a target="view_window" href="网页分支/优秀网页.html">请点击</a></li>
+    </ul>
+</div>
+
+<div class="title" id="menu4" onclick="showmenu('4') ">职业学院</div>
+  <div id="list4" class="content" style="display:none">
+   <ul>
+    <li id="l9" onclick="showcontainer('9') ">我的职业<a target="view_window" href="网页分支/我的职业.html">请点击</a></li>
+    <li id="l10" onclick="showcontainer('10') ">职业路径<a target="view_window" href="网页分支/职业路径.html">请点击</a></li>
+    <li id="l11" onclick="showcontainer('11') ">最新课程<a target="view_window" href="网页分支/最新课程.html">请点击</a></li>
+    </ul>
+</div>
+</div>
+
+<div id="container">
+<p>欢迎来到极客学院学习中心</p>
+    <div id="c1">在学课程</div>
+	<div id="c2">已学课程</div>
+	<div id="c3">收藏课程</div>
+	<div id="c4">就业班信息</div>
+	<div id="c5">就业班福利</div>
+	<div id="c6">极客论坛</div>
+	<div id="c7">极客冲浪</div>
+	<div id="c8">极客网页</div>
+	<div id="c9">我的职业</div>
+	<div id="c10">职业路径</div>
+	<div id="c11">最新课程</div>
+	</div>
+</div>
+</body>
+
+</html>

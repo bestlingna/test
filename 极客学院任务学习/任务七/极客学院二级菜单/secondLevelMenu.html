@@ -1,0 +1,3007 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<meta charset="UTF-8"/>
+	<style type="text/css"></style>
+	<link rel="stylesheet" type="text/css" href="jike.css">
+	<title>极客学院学习中心</title>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="jike.js"></script>
+</head>
+<body class="no_header">
+<!--header-->
+	<div id="header">
+		<div class="w-1000 relative">
+			<a href="http://www.jikexueyuan.com/" class="logo">
+			<img src="http://e.jikexueyuan.com/headerandfooter/images/logo.png?t=1495686193000" height="40" width="109">
+			</a>
+			<!--nav-->
+			<nav>
+				<ul class="header-nav">
+					<li><a href="http://www.jikexueyuan.com/">首页</a></li>
+					<!--职业学院-->
+					<li>职业学院<i class="arrow-icon"></i>
+						<div class="submenu school-list">
+							<h3>前端学院</h3>
+							<a href="http://www.jikexueyuan.com/zhiye/web"><i class="web-icon"></i>Web 前端工程师</a>
+							<a href="http://www.jikexueyuan.com/zhiye/wechatapp"><i class="wechat-icon"></i>微信小程序工程师</a>
+							<h3>后端学院</h3>
+							<a href="http://www.jikexueyuan.com/zhiye/php"><i class="php-icon"></i>PHP 工程师<span class="new-icon">New</span></a>
+							<a href="http://www.jikexueyuan.com/zhiye/python"><i class="python-icon"></i>Python Web工程师</a>
+							<a href="http://www.jikexueyuan.com/zhiye/go"><i class="go-icon"></i>Go语言工程师</a>
+                        <!--<a href="//j.jikexueyuan.com/train/php?huodong=jiuye_php_in"><i class="php-icon"></i>PHP工程师</a>
+                        <a href="//j.jikexueyuan.com/train/javaweb?huodong=jiuye_javaweb_guide"><i class="java-icon"></i>Java Web工程师</a>-->
+                        <h3>移动学院</h3>
+                        <a href="http://www.jikexueyuan.com/zhiye/android"><i class="android-icon"></i>Android工程师</a>
+                        <a href="http://www.jikexueyuan.com/zhiye/ios"><i class="ios-icon"></i>iOS工程师</a>
+                    </div>
+                </li>
+                <!--会员课程-->
+                <li>会员课程<i class="arrow-icon"></i>
+                	<div class="submenu vip-lesson">
+                		<a href="http://www.jikexueyuan.com/course/"><i class="kck-icon"></i>课程库<span>2500+</span></a>
+                		<a href="http://ke.jikexueyuan.com/zhiye/"><i class="zyljt-icon"></i>职业路径图<span>9</span></a>
+                		<a href="http://www.jikexueyuan.com/path/"><i class="zstxt-icon"></i>知识体系图<span>24</span></a>
+                		<a href="http://ke.jikexueyuan.com/xilie/"><i class="xlkc-icon"></i>系列课程<span>101</span></a>
+                		<a href="http://www.jikexueyuan.com/tag/"><i class="kcbq-icon"></i>课程标签<span>4000+</span></a>
+                		<a href="http://www.jikexueyuan.com/vip/"><i class="vip-icon"></i>VIP会员购买<span>30/月  260/年</span></a>
+                	</div>
+                </li>
+                <!--极客社区-->
+                <li>极客社区<i class="arrow-icon"></i>
+                	<div class="submenu vip-lesson">
+                		<a href="http://wenda.jikexueyuan.com/"><i class="jswd-icon"></i>技术问答<span>20000+</span></a>
+                		<a href="http://wiki.jikexueyuan.com/"><i class="wiki-icon"></i>Wiki<span>351</span></a>
+                		<a href="http://qun.jikexueyuan.com/"><i class="sq-icon"></i>社群<span>7000+</span></a>
+                		<a href="http://download.jikexueyuan.com/"><i class="zygx-icon"></i>资源下载<span>3000+</span></a>
+                	</div>
+                </li>
+            </ul>
+        </nav>
+        <!--nav结束 -->
+        <!--搜索、注册、登录-->
+        <div class="icon-box">
+        <!--搜索-->
+            <span class="search-icon" id="search-btn"></span>
+            <span class="app-icon loginlist relative" id="appicon">
+                    <div class="submenu">
+                        <i class="top-icon"></i>
+                        <!--图片-->
+                        <img src="http://e.jikexueyuan.com/headerandfooter/images/heade-rwm.png?t=1495686193000">
+                    </div>
+            </span>
+           <!--手机二维码-->
+            <span class="noti-icon" id="openNoti">
+            <em class="unread-count unread-style" style="display: none;"></em>
+            </span>
+
+            <span class="relative loginlist logged" id="loginlist">
+            <a href="http://my.jikexueyuan.com/setting/user/">
+            <img src="https://assets.jikexueyuan.com/user/avtar/default.gif" id="userpoto"></a>
+            <i id="uservip-icon" class="year-icon"></i>
+            <dl class="submenu">
+            <i class="top-icon"></i>
+            <dd id="getUserLevel">
+            <a href="http://my.jikexueyuan.com/user/myvip" class="rzno-vip"></a>
+            <a href="http://my.jikexueyuan.com/user/myvip" class="year-vip"></a>
+            </dd>
+            <dd>
+            <a href="http://xue.jikexueyuan.com/">
+            <i class="xxzx-icon"></i>学习中心</a>
+            </dd>
+            <dd>
+            <a href="http://my.jikexueyuan.com/0HjWXkqjU">
+            <i class="grzy-icon"></i>
+            个人主页
+            </a>
+            </dd>
+            <dd>
+            <a href="http://my.jikexueyuan.com/setting/user/">
+            <i class="zhsz-icon"></i>账号设置
+            </a>
+            </dd>
+            <dd>
+            <a href="http://passport.jikexueyuan.com/submit/logout">
+            <i class="tc-icon"></i>
+            退出登录
+            </a>
+            </dd>
+            </dl>
+            </span>
+             <!--消息通知 -->
+            <div id="newMessageBox" class="messagebox" style="display: none;">
+                <h3><em class="message-title">消息通知</em><em id="setRead" class="icon-read" style="display: none;"></em></h3>
+                <div class="message-list" style="height: 170px;">
+                    <!-- 加载动画 -->
+                    <div id="spinner" style="display: none;">
+                        <div class="rect1"></div>
+                        <div class="rect2"></div>
+                        <div class="rect3"></div>
+                        <div class="rect4"></div>
+                        <div class="rect5"></div>
+                    </div>
+                    <!-- 没有消息 -->
+                    <div class="no-message" style="display: block;">
+                        <img src="http://e.jikexueyuan.com/headerandfooter/images/no-message.png?t=1495686193000">
+                        暂没有新消息哦～
+                    </div>
+                </div>
+                <a href="//www.jikexueyuan.com/member/notifications/" id="linkToMember" class="link-member">全部消息&gt;&gt;</a>
+            </div>
+        </div>
+        <!--搜索框-->
+        <div class="searchbox" id="searchbox">
+        	<i class="close-icon" id="close-btn"></i>
+        	<i class="search-icon" id="search-btn"></i>
+        	<input id="web_search_header" placeholder="搜索课程、问答或Wiki" value="">
+        	<div class="tagbox">
+        		<a href="http://search.jikexueyuan.com/course/?q=Android">Android</a>
+        		<a href="http://search.jikexueyuan.com/course/?q=iOS">iOS</a>
+        		<a href="http://search.jikexueyuan.com/course/?q=HTML5">HTML5</a>
+        	</div>
+        </div>
+    </div>
+</div>
+<!--container-->
+<div class="container">
+	<!--home-crumb-->
+	<div class="home-crumb">
+		<span><a href="http://www.jikexueyuan.com/">首页</a></span>
+		<span class="crumb-arrow">学习中心</span>
+	</div>
+    <!--右边导航栏nav-cont-->
+	<div class="nav-cont">
+		<nav class="nav-block">
+			<ul>
+				<li class="person">
+					<i></i>
+					<img src="https://assets.jikexueyuan.com/user/avtar/default.gif" alt="我的头像">
+					<span>bestlingna</span>
+				</li>
+				<a href="secondLevelMenu.html">
+					<li class="select classhover">
+						<i class="green-class"></i>
+						<span class="mar-left active-green">我的课程</span>
+					</li>
+				</a>
+				<a href="极客学院二级菜单-我的职业/极客学院二级菜单-我的职业.html">
+					<li class="select careerhover">
+						<i class="career-img"></i>
+						<span>我的职业</span>
+					</li>
+				</a>
+				<a href="极客学院二级菜单-我的就业班/极客学院二级菜单-我的就业班.html">
+					<li class="select employhover">
+						<i class="employ-img"></i>
+						<span>我的就业班</span>
+					</li>
+				</a>
+			</ul>
+		</nav>
+	</div>
+
+    <!--中间主页main-cont-->
+	<div class="main-cont">
+		<section class="home-myclass">
+		<!--中间主页上部导航navbar-->
+			<div class="navbar">
+			<ul>
+				<li><a href="secondLevelMenu.html">在学</a></li>
+				<li><a href="极客学院二级菜单-学完页/极客学院二级菜单-学完页.html" class="">学完</a></li>
+				<li><a href="极客学院二级菜单-收藏页/极客学院二级菜单-收藏页.html" class="">收藏</a></li>
+			</ul>
+			<div class="previewMode">
+				<ul>
+					<li class="kuai-icon"><i class="icon"></i>
+					</li>
+					<li class="list-icon curr"><i class="icon"></i>
+					</li>
+					
+				</ul>
+			</div>
+			</div>
+           <!--中间主页视频展示lesson-card-cont cf-->
+			<div class="lesson-card-cont cf">
+				<ul class="lesson-list">
+				   <!--视频展示1-->
+					<li>
+						<div class="lessonimg-box">
+                            <!--右下角注释-->
+							<span class="learn-statu">
+								学到第
+								5
+								课时
+							</span>
+                            
+							<a href="http://www.jikexueyuan.com/course/246.html" target="_blank">
+							<!--视频展示图片-->
+								<img src="https://a1.jikexueyuan.com/home/201409/18/529c/541a36a186a5f.jpg" class="lessonimg" title="jQuery选择器和事件" alt="jQuery选择器和事件">
+                                <!--点击增加阴影-->
+								<div class="lessonplay" style="opacity: 0;">
+									<i class="playericon"></i>
+								</div>
+								<div class="lessonplay" style="opacity: 0;">
+									<div class="cricle">
+										<div class="mask"></div>
+										<div class="left">
+											<div class="bg"></div>
+										</div>
+										<div class="cright">
+											<div class="bg"></div>
+										</div>
+										<div class="text"></div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!--视频内容解释-->
+						<div class="lesson-infor" style="height: 88px;">
+							<h2 class="lesson-info-h2">
+								<a href="http://www.jikexueyuan.com/course/246.html" target="_blank">jQuery选择器和事件</a>
+							</h2>
+						<!--鼠标悬停时出现解释-->	
+							<p style="opacity: 0; height: 0px; display: none;">本课讲解jQuery的选择器和jQuery的事件。</p>
+							<div class="timeandicon">
+								<div class="cf">
+									<dl>
+										<dd class="mar-b8">
+											<i class="time-icon"></i><em>5
+											课时 31分钟</em>
+										</dd>
+										<!--鼠标悬停时出现解释-->
+										<dd class="zhongji" style="display: none;">
+											<i class="xinhao-icon"></i><em>初级</em>
+										</dd>
+									</dl>
+									<!--鼠标悬停时出现解释-->
+									<em class="learn-number" style="display: none;">26947 人学习</em>
+								</div>
+								<div class="cf">
+									<div class="lessonicon-box" style="bottom: 7px;">
+										<a target="_blank" href="http://www.jikexueyuan.com/course/jquery/">
+											<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/c538/575cd38804558.png" alt="jquery" title="jquery">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>                                                            <li>
+					<div class="lessonimg-box">
+						<i class="rz-icon"></i>
+
+						<span class="learn-statu">
+							学到第
+							3
+							课时
+						</span>
+
+						<a href="http://www.jikexueyuan.com/course/253.html" target="_blank">
+							<img src="https://a1.jikexueyuan.com/home/201409/23/2dea/54215f7e6325e.jpg" class="lessonimg" title="jQuery HTML之捕获、设置、元素添加、元素删除" alt="jQuery HTML之捕获、设置、元素添加、元素删除">
+							<div class="lessonplay" style="opacity: 0;">
+								<i class="playericon"></i>
+							</div>
+							<div class="lessonplay" style="opacity: 0;">
+								<div class="cricle">
+									<div class="mask"></div>
+									<div class="left">
+										<div class="bg"></div>
+									</div>
+									<div class="cright">
+										<div class="bg"></div>
+									</div>
+									<div class="text"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="lesson-infor" style="height: 88px;">
+						<h2 class="lesson-info-h2">
+							<a href="http://www.jikexueyuan.com/course/253.html" target="_blank">jQuery HTML之捕获、设置、元素添加、元素删除</a>
+						</h2>
+						<p style="display: none; opacity: 0; height: 0px;">本课讲解jQuery HTML的捕获、设置、元素添加、元素删除</p>
+						<div class="timeandicon">
+							<div class="cf">
+								<dl>
+									<dd class="mar-b8">
+										<i class="time-icon"></i><em>4
+										课时 38分钟</em>
+									</dd>
+									<dd class="zhongji" style="display: none;">
+										<i class="xinhao-icon"></i><em>初级</em>
+									</dd>
+								</dl>
+								<em class="learn-number" style="display: none;">18668 人学习</em>
+							</div>
+							<div class="cf">
+								<div class="lessonicon-box" style="bottom: 7px;">
+									<a target="_blank" href="http://www.jikexueyuan.com/course/jquery/">
+										<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/c538/575cd38804558.png" alt="jquery" title="jquery">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li> 
+				 <li>                                                          
+				<div class="lessonimg-box">
+					<i class="rz-icon"></i>
+
+					<span class="learn-statu">
+						学到第
+						3
+						课时
+					</span>
+
+					<a href="http://www.jikexueyuan.com/course/196.html" target="_blank">
+						<img src="https://a1.jikexueyuan.com/home/201408/17/9dc9/53f05ce862437.jpg" class="lessonimg" title="JavaScript事件详解" alt="JavaScript事件详解">
+						<div class="lessonplay" style="opacity: 0;">
+							<i class="playericon"></i>
+						</div>
+						<div class="lessonplay" style="opacity: 0;">
+							<div class="cricle">
+								<div class="mask"></div>
+								<div class="left">
+									<div class="bg"></div>
+								</div>
+								<div class="cright">
+									<div class="bg"></div>
+								</div>
+								<div class="text"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="lesson-infor" style="height: 88px;">
+					<h2 class="lesson-info-h2">
+						<a href="http://www.jikexueyuan.com/course/196.html" target="_blank">JavaScript事件详解</a>
+					</h2>
+					<p style="opacity: 0; height: 0px; display: none;">本课讲解JavaScript对事件的处理，了解几种事件的应用以及在不同浏览器中的兼容性。</p>
+					<div class="timeandicon">
+						<div class="cf">
+							<dl>
+								<dd class="mar-b8">
+									<i class="time-icon"></i><em>3
+									课时 26分钟</em>
+								</dd>
+								<dd class="zhongji" style="display: none;">
+									<i class="xinhao-icon"></i><em>初级</em>
+								</dd>
+							</dl>
+							<em class="learn-number" style="display: none;">29776 人学习</em>
+						</div>
+						<div class="cf">
+							<div class="lessonicon-box" style="bottom: 7px;">
+								<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+									<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>                                                            <li>
+			<div class="lessonimg-box">
+				<i class="vip-icon"></i>
+
+				<span class="learn-statu">
+					学到第
+					1
+					课时
+				</span>
+
+				<a href="http://www.jikexueyuan.com/course/417.html" target="_blank">
+					<img src="https://a1.jikexueyuan.com/home/201412/22/8858/54977fcb7f409.jpg" class="lessonimg" title="PHP 会话管理" alt="PHP 会话管理">
+					<div class="lessonplay" style="opacity: 0;">
+						<i class="playericon"></i>
+					</div>
+					<div class="lessonplay" style="opacity: 0;">
+						<div class="cricle">
+							<div class="mask"></div>
+							<div class="left">
+								<div class="bg"></div>
+							</div>
+							<div class="cright">
+								<div class="bg"></div>
+							</div>
+							<div class="text"></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="lesson-infor" style="height: 88px;">
+				<h2 class="lesson-info-h2">
+					<a href="http://www.jikexueyuan.com/course/417.html" target="_blank">PHP 会话管理</a>
+				</h2>
+				<p style="opacity: 0; height: 0px; display: none;">本课讲解 PHP 的会话管理，内容包括操作 Session 和操作 Cookie，Session 数据存放在服务器端，不受浏览器端环境限制，Cookie 数据存放在客户端，受浏览器端环境限制。</p>
+				<div class="timeandicon">
+					<div class="cf">
+						<dl>
+							<dd class="mar-b8">
+								<i class="time-icon"></i><em>3
+								课时 17分钟</em>
+							</dd>
+							<dd class="zhongji" style="display: none;">
+								<i class="xinhao-icon"></i><em>初级</em>
+							</dd>
+						</dl>
+						<em class="learn-number" style="display: none;">14224 人学习</em>
+					</div>
+					<div class="cf">
+						<div class="lessonicon-box" style="bottom: 7px;">
+							<a target="_blank" href="http://www.jikexueyuan.com/course/phpbase/">
+								<img width="16" src="https://a1.jikexueyuan.com/home/201604/28/538c/5721889c1d714.png" alt="phpbase" title="phpbase">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>                                                            <li>
+		<div class="lessonimg-box">
+			<i class="vip-icon"></i>
+
+			<span class="learn-statu">
+				学到第
+				5
+				课时
+			</span>
+
+			<a href="http://www.jikexueyuan.com/course/208.html" target="_blank">
+				<img src="https://a1.jikexueyuan.com/home/201408/24/6a01/53f9ece25b4c0.jpg" class="lessonimg" title="JavaScript浏览器对象" alt="JavaScript浏览器对象">
+				<div class="lessonplay" style="opacity: 0;">
+					<i class="playericon"></i>
+				</div>
+				<div class="lessonplay" style="opacity: 0;">
+					<div class="cricle">
+						<div class="mask"></div>
+						<div class="left">
+							<div class="bg"></div>
+						</div>
+						<div class="cright">
+							<div class="bg"></div>
+						</div>
+						<div class="text"></div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="lesson-infor" style="height: 88px;">
+			<h2 class="lesson-info-h2">
+				<a href="http://www.jikexueyuan.com/course/208.html" target="_blank">JavaScript浏览器对象</a>
+			</h2>
+			<p style="opacity: 0; height: 0px; display: none;">本课主要讲解JavaScript的浏览器对象，包括计时器、History、Location和Cookies等</p>
+			<div class="timeandicon">
+				<div class="cf">
+					<dl>
+						<dd class="mar-b8">
+							<i class="time-icon"></i><em>5
+							课时 30分钟</em>
+						</dd>
+						<dd class="zhongji" style="display: none;">
+							<i class="xinhao-icon"></i><em>初级</em>
+						</dd>
+					</dl>
+					<em class="learn-number" style="display: none;">23749 人学习</em>
+				</div>
+				<div class="cf">
+					<div class="lessonicon-box" style="bottom: 7px;">
+						<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+							<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</li>                                                            <li>
+	<div class="lessonimg-box">
+		<i class="vip-icon"></i>
+
+		<span class="learn-statu">
+			学到第
+			3
+			课时
+		</span>
+
+		<a href="http://www.jikexueyuan.com/course/1379.html" target="_blank">
+			<img src="https://a1.jikexueyuan.com/home/201604/25/1966/571dd2f73ea5c.jpg" class="lessonimg" title="JavaScript正则表达式" alt="JavaScript正则表达式">
+			<div class="lessonplay" style="opacity: 0;">
+				<i class="playericon"></i>
+			</div>
+			<div class="lessonplay" style="opacity: 0;">
+				<div class="cricle">
+					<div class="mask"></div>
+					<div class="left">
+						<div class="bg"></div>
+					</div>
+					<div class="cright">
+						<div class="bg"></div>
+					</div>
+					<div class="text"></div>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2">
+			<a href="http://www.jikexueyuan.com/course/1379.html" target="_blank">JavaScript正则表达式</a>
+		</h2>
+		<p style="opacity: 0; height: 0px; display: none;">本课程学习JavaScript正则表达式，正则表达式（英语：Regular Expression，在代码中常简写为regex、regexp或RE）使用单个字符串来描述、匹配一系列符合某个句法规则的字符串搜索模式。搜索模式可用于文本搜索和文本替换。</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8">
+						<i class="time-icon"></i><em>4
+						课时 31分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						<i class="xinhao-icon2"></i><em>中级</em>
+					</dd>
+				</dl>
+				<em class="learn-number" style="display: none;">16278 人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box" style="bottom: 7px;">
+					<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+ <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		5
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/195.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201408/17/c479/53f059c7d1e10.jpg" class="lessonimg" title="JavaScript内置对象" alt="JavaScript内置对象">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/195.html" target="_blank">JavaScript内置对象</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课主要讲解JavaScript的内置对象，包括字符串、日期对象、数组对象和Math对象。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>5
+					课时 38分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">28235 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="vip-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/185.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201408/12/cdb8/53ea16bcd7f0f.jpg" class="lessonimg" title="JavaScript DOM对象" alt="JavaScript DOM对象">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/185.html" target="_blank">JavaScript DOM对象</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课主要讲解JavaScriptDOM对象，通过对DOM对象的使用操作HTML和CSS</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>4
+					课时 24分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">34355 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/184.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201408/12/abbe/53ea0675f1114.jpg" class="lessonimg" title="JavaScript异常处理和事件处理" alt="JavaScript异常处理和事件处理">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/184.html" target="_blank">JavaScript异常处理和事件处理</a>
+	</h2>
+	<p>本课讲解JavaScript异常和事件，让学员学习到出现异常如何处理以及事件的触发</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>2
+					课时 21分钟</em>
+				</dd>
+				<dd class="zhongji" style="display:none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number">33407 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom:8px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		6
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/180.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201408/10/bd8c/53e7059c107e4.jpg" class="lessonimg" title="JavaScript函数" alt="JavaScript函数">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/180.html" target="_blank">JavaScript函数</a>
+	</h2>
+	<p>本课主要讲解JavaScript函数，让学员掌握函数的应用以及变量的作用域</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>6
+					课时 29分钟</em>
+				</dd>
+				<dd class="zhongji" style="display:none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number">39990 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom:8px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="vip-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		6
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/178.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201408/07/6b61/53e37a9abd818.jpg" class="lessonimg" title="JavaScript语法详解" alt="JavaScript语法详解">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/178.html" target="_blank">JavaScript语法详解</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课讲解JavaScript语法，让学员掌握运算符、控制语句和循环语句可以让你对js有一个全面的认识。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>7
+					课时 41分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">42480 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/370.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201411/19/5982/546c03d0afd29.jpg" class="lessonimg" title="HTML5开发项目实战:导航栏" alt="HTML5开发项目实战:导航栏">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/370.html" target="_blank">HTML5开发项目实战:导航栏</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课对导航栏进行讲解，并完成水平导航栏和垂直导航栏的制作，根据导航栏的风格不同，使用CSS样式完成不同的导航栏效果。让学员掌握对导航栏的制作。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>4
+					课时 42分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">19561 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/practice/">
+					<img width="16" src="https://wirrorcdn.jikexueyuan.com/category/advance.png" alt="practice" title="practice">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		3
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/1785.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201508/06/488d/55c2cf7c86f1b.jpg" class="lessonimg" title="老式浏览器支持HTML5和CSS3" alt="老式浏览器支持HTML5和CSS3">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/1785.html" target="_blank">老式浏览器支持HTML5和CSS3</a>
+	</h2>
+	<p>本课程学习老式浏览器如何应用HTML5和CSS3.</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>3
+					课时 11分钟</em>
+				</dd>
+				<dd class="zhongji" style="display:none;">
+					<i class="xinhao-icon2"></i><em>中级</em>
+				</dd>
+			</dl>
+			<em class="learn-number">9491 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom:8px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/css/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201604/29/d204/57231d72e4397.png" alt="css" title="css">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="vip-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201601/12/5643/56946646c4e83.jpg" class="lessonimg" title="CSS3 实现 3D 立方体旋转和图形挤压变形动画特效" alt="CSS3 实现 3D 立方体旋转和图形挤压变形动画特效">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">CSS3 实现 3D 立方体旋转和图形挤压变形动画特效</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课程讲解，使用 CSS3，完成 3D 立方体旋转和图形挤压变形动画特效，能够熟练运用 CSS3中，有关 3D 空间的相关属性，实现立体动画效果，并能理解和掌握 CSS3 中 filter 属性，在项目中的运用。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>4
+					课时 0分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon2"></i><em>中级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">5121 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/css3/">
+					<img width="16" src="https://wirrorcdn.jikexueyuan.com/category/webbase.png" alt="css3" title="css3">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/458.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201501/05/b2ac/54a9eb2844d89.jpg" class="lessonimg" title="彩虹糖粒子特效" alt="彩虹糖粒子特效">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/458.html" target="_blank">彩虹糖粒子特效</a>
+	</h2>
+	<p>本课程讲解 Cocos2d-x 使用代码和粒子一起完成动态切割图片并喷射出彩色的粒子效果。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>3
+					课时 26分钟</em>
+				</dd>
+				<dd class="zhongji" style="display:none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number">4194 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom:8px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/cocos/">
+					<img width="16" src="https://wirrorcdn.jikexueyuan.com/category/games.png" alt="cocos" title="cocos">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		1
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/469.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201606/12/8c01/575cd08eccc50.jpg" class="lessonimg" title="C语言常用运算符" alt="C语言常用运算符">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/469.html" target="_blank">C语言常用运算符</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课讲解在 C 语言中的常用运算符，内容包括数学运算、逻辑运算、位运算，通过本课学习将掌握 C 语言中常用的运算技能。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>4
+					课时 39分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">13586 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/c/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201412/31/5d76/54a367ad6bae6.png" alt="c" title="c">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="vip-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		1
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/43.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201605/13/1f65/57357ebca5630.jpg" class="lessonimg" title="Android项目开发实战-2048游戏" alt="Android项目开发实战-2048游戏">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/43.html" target="_blank">Android项目开发实战-2048游戏</a>
+	</h2>
+	<p>本课程学习创建2048游戏项目，掌握2048游戏的开发思路、游戏算法，独立开发一款属于自己的2048。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>12
+					课时 75分钟</em>
+				</dd>
+				<dd class="zhongji" style="display:none;">
+					<i class="xinhao-icon2"></i><em>中级</em>
+				</dd>
+			</dl>
+			<em class="learn-number">48509 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom:8px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/android/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/00a1/54578d8e652c3.png" alt="android" title="android">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+
+	<span class="learn-statu">
+		学到第
+		1
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/127.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201407/10/c6e4/53bdf15c29478.jpg" class="lessonimg" title="HTML5特性简介" alt="HTML5特性简介">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/127.html" target="_blank">HTML5特性简介</a>
+	</h2>
+	<p>本套课程主要来了解HTML5，包含，简介、集成开发环境的搭建和HTML基础。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>3
+					课时 19分钟</em>
+				</dd>
+				<dd class="zhongji" style="display:none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number">136910 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom:8px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/html5/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201604/29/8ccb/57231d532b9a5.png" alt="html5" title="html5">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="vip-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		1
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/877.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201505/12/06b2/55515b529a163.jpg" class="lessonimg" title="HTML5 编辑 API 之 Range 对象（一）" alt="HTML5 编辑 API 之 Range 对象（一）">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/877.html" target="_blank">HTML5 编辑 API 之 Range 对象（一）</a>
+	</h2>
+	<p>本套课程讲解 HTML5 编辑 API 之 Range 对象，包含基本概念，selectNode 方法、selectNodeContents 方法、deleteContents 方法、setStart 方法、setEnd 方法、setStartBefore 方法、setStartAfter 方法、setEndBefore 方法和 setEndAfter 方法。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>3
+					课时 20分钟</em>
+				</dd>
+				<dd class="zhongji" style="display:none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number">16200 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom:8px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/html5/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201604/29/8ccb/57231d532b9a5.png" alt="html5" title="html5">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/700.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201504/09/e9c7/5525dad3e29d5.jpg" class="lessonimg" title="HTML 5 与HTML 4 的区别" alt="HTML 5 与HTML 4 的区别">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/700.html" target="_blank">HTML 5 与HTML 4 的区别</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本套课程主要讲解 HTML 5 与 HTML 4 的区别。包含 HTML 5 的推出理由及目标、新增的元素和废除的元素以及新增的属性和废除的属性。让学员掌握 HTML 5 与 HTML 4 之间的区别。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>3
+					课时 20分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">50474 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/html5/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201604/29/8ccb/57231d532b9a5.png" alt="html5" title="html5">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		4
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/816.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201504/30/0f69/55418a8c975fc.jpg" class="lessonimg" title="Android 常用控件" alt="Android 常用控件">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/816.html" target="_blank">Android 常用控件</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课讲解 Android 开发中几种常用的控件，内容包括下拉列表、日期选择器、时间选择器、单项选择、多项选择，通常学习使用这些常用的控件而掌握使用 Android 控件的能用方法</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>5
+					课时 20分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">16935 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/android/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/00a1/54578d8e652c3.png" alt="android" title="android">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/708.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201504/10/f0c7/552728d5ded0c.jpg" class="lessonimg" title="Android Fragment" alt="Android Fragment">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/708.html" target="_blank">Android Fragment</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课讲解在 Android 中Fragment的用法，内容包括使用Fragment、Fragment的生命周期、带侧栏的Activity、Tabbed Activity。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>4
+					课时 39分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">28188 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/android/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/00a1/54578d8e652c3.png" alt="android" title="android">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/768.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201504/22/504d/5537010b3f7ff.jpg" class="lessonimg" title="Android 日志系统" alt="Android 日志系统">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/768.html" target="_blank">Android 日志系统</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课讲解 Android 日志系统的使用，内容包括 System.out、System.err 的用法，Log.i、Log.d、Log.w、Log.e、Log.v 函数的用法，如何在 Android Studio 中对 Android 日志进行分类过滤，如何在 DDMS 中对 Android 日志进行分类过滤。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>3
+					课时 16分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">14070 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/android/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/00a1/54578d8e652c3.png" alt="android" title="android">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="vip-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/749.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201504/20/4c7c/55345ae96a65b.jpg" class="lessonimg" title="Android 广播接收器 BroadcastReceiver" alt="Android 广播接收器 BroadcastReceiver">
+		<div class="lessonplay" style="opacity: 0;">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay" style="opacity: 0;">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/749.html" target="_blank">Android 广播接收器 BroadcastReceiver</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课将对 BrocastReceiver 进行详细的讲解，内容包括在 Manifest 文件中配置BroadcastReceiver，动态注册和注销 BroadcastReceiver，BroadcastReceiver 的优先级</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>3
+					课时 17分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">14383 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/android/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/00a1/54578d8e652c3.png" alt="android" title="android">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>
+</ul>
+</div>
+
+<div class="lesson-card-cont2 cf">
+				<ul class="lesson-list2">
+				   <!--视频展示1-->
+					<li>
+						<div class="lessonimg-box">
+                            <!--右下角注释-->
+							<span class="learn-statu">
+								学到第
+								5
+								课时
+							</span>
+                            
+							<a href="http://www.jikexueyuan.com/course/246.html" target="_blank">
+							<!--视频展示图片-->
+								<img src="https://a1.jikexueyuan.com/home/201409/18/529c/541a36a186a5f.jpg" class="lessonimg" title="jQuery选择器和事件" alt="jQuery选择器和事件">
+                                <!--点击增加阴影-->
+								<div class="lessonplay">
+									<i class="playericon"></i>
+								</div>
+								<div class="lessonplay2">
+									<div class="cricle">
+										<div class="mask"></div>
+										<div class="left">
+											<div class="bg"></div>
+										</div>
+										<div class="cright">
+											<div class="bg"></div>
+										</div>
+										<div class="text"></div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!--视频内容解释-->
+						<div class="lesson-infor" style="height: 88px;">
+							<h2 class="lesson-info-h2">
+								<a href="http://www.jikexueyuan.com/course/246.html" target="_blank">jQuery选择器和事件</a>
+							</h2>
+						<!--鼠标悬停时出现解释-->	
+							<p style="opacity: 0; height: 0px; display: none;">本课讲解jQuery的选择器和jQuery的事件。</p>
+							<div class="timeandicon">
+								<div class="cf">
+									<dl>
+										<dd class="mar-b8">
+											<i class="time-icon"></i><em>5
+											课时 31分钟</em>
+										</dd>
+										<!--鼠标悬停时出现解释-->
+										<dd class="zhongji" style="display: none;">
+											<i class="xinhao-icon"></i><em>初级</em>
+										</dd>
+									</dl>
+									<!--鼠标悬停时出现解释-->
+									<em class="learn-number" style="display: none;">26947 人学习</em>
+								</div>
+								<div class="cf">
+									<div class="lessonicon-box" style="bottom: 7px;">
+										<a target="_blank" href="http://www.jikexueyuan.com/course/jquery/">
+											<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/c538/575cd38804558.png" alt="jquery" title="jquery">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>                                                            <li>
+					<div class="lessonimg-box">
+						<i class="rz-icon"></i>
+
+						<span class="learn-statu">
+							学到第
+							3
+							课时
+						</span>
+
+						<a href="http://www.jikexueyuan.com/course/253.html" target="_blank">
+							<img src="https://a1.jikexueyuan.com/home/201409/23/2dea/54215f7e6325e.jpg" class="lessonimg" title="jQuery HTML之捕获、设置、元素添加、元素删除" alt="jQuery HTML之捕获、设置、元素添加、元素删除">
+							<div class="lessonplay">
+								<i class="playericon"></i>
+							</div>
+							<div class="lessonplay2">
+								<div class="cricle">
+									<div class="mask"></div>
+									<div class="left">
+										<div class="bg"></div>
+									</div>
+									<div class="cright">
+										<div class="bg"></div>
+									</div>
+									<div class="text"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="lesson-infor" style="height: 88px;">
+						<h2 class="lesson-info-h2">
+							<a href="http://www.jikexueyuan.com/course/253.html" target="_blank">jQuery HTML之捕获、设置、元素添加、元素删除</a>
+						</h2>
+						<p style="display: none; opacity: 0; height: 0px;">本课讲解jQuery HTML的捕获、设置、元素添加、元素删除</p>
+						<div class="timeandicon">
+							<div class="cf">
+								<dl>
+									<dd class="mar-b8">
+										<i class="time-icon"></i><em>4
+										课时 38分钟</em>
+									</dd>
+									<dd class="zhongji" style="display: none;">
+										<i class="xinhao-icon"></i><em>初级</em>
+									</dd>
+								</dl>
+								<em class="learn-number" style="display: none;">18668 人学习</em>
+							</div>
+							<div class="cf">
+								<div class="lessonicon-box" style="bottom: 7px;">
+									<a target="_blank" href="http://www.jikexueyuan.com/course/jquery/">
+										<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/c538/575cd38804558.png" alt="jquery" title="jquery">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li> 
+				 <li>                                                          
+				<div class="lessonimg-box">
+					<i class="rz-icon"></i>
+
+					<span class="learn-statu">
+						学到第
+						3
+						课时
+					</span>
+
+					<a href="http://www.jikexueyuan.com/course/196.html" target="_blank">
+						<img src="https://a1.jikexueyuan.com/home/201408/17/9dc9/53f05ce862437.jpg" class="lessonimg" title="JavaScript事件详解" alt="JavaScript事件详解">
+						<div class="lessonplay" >
+							<i class="playericon"></i>
+						</div>
+						<div class="lessonplay2">
+							<div class="cricle">
+								<div class="mask"></div>
+								<div class="left">
+									<div class="bg"></div>
+								</div>
+								<div class="cright">
+									<div class="bg"></div>
+								</div>
+								<div class="text"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="lesson-infor" style="height: 88px;">
+					<h2 class="lesson-info-h2">
+						<a href="http://www.jikexueyuan.com/course/196.html" target="_blank">JavaScript事件详解</a>
+					</h2>
+					<p style="opacity: 0; height: 0px; display: none;">本课讲解JavaScript对事件的处理，了解几种事件的应用以及在不同浏览器中的兼容性。</p>
+					<div class="timeandicon">
+						<div class="cf">
+							<dl>
+								<dd class="mar-b8">
+									<i class="time-icon"></i><em>3
+									课时 26分钟</em>
+								</dd>
+								<dd class="zhongji" style="display: none;">
+									<i class="xinhao-icon"></i><em>初级</em>
+								</dd>
+							</dl>
+							<em class="learn-number" style="display: none;">29776 人学习</em>
+						</div>
+						<div class="cf">
+							<div class="lessonicon-box" style="bottom: 7px;">
+								<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+									<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			 <li>
+			<div class="lessonimg-box">
+				<i class="vip-icon"></i>
+
+				<span class="learn-statu">
+					学到第
+					1
+					课时
+				</span>
+
+				<a href="http://www.jikexueyuan.com/course/417.html" target="_blank">
+					<img src="https://a1.jikexueyuan.com/home/201412/22/8858/54977fcb7f409.jpg" class="lessonimg" title="PHP 会话管理" alt="PHP 会话管理">
+					<div class="lessonplay">
+						<i class="playericon"></i>
+					</div>
+					<div class="lessonplay2">
+						<div class="cricle">
+							<div class="mask"></div>
+							<div class="left">
+								<div class="bg"></div>
+							</div>
+							<div class="cright">
+								<div class="bg"></div>
+							</div>
+							<div class="text"></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="lesson-infor" style="height: 88px;">
+				<h2 class="lesson-info-h2">
+					<a href="http://www.jikexueyuan.com/course/417.html" target="_blank">PHP 会话管理</a>
+				</h2>
+				<p style="opacity: 0; height: 0px; display: none;">本课讲解 PHP 的会话管理，内容包括操作 Session 和操作 Cookie，Session 数据存放在服务器端，不受浏览器端环境限制，Cookie 数据存放在客户端，受浏览器端环境限制。</p>
+				<div class="timeandicon">
+					<div class="cf">
+						<dl>
+							<dd class="mar-b8">
+								<i class="time-icon"></i><em>3
+								课时 17分钟</em>
+							</dd>
+							<dd class="zhongji" style="display: none;">
+								<i class="xinhao-icon"></i><em>初级</em>
+							</dd>
+						</dl>
+						<em class="learn-number" style="display: none;">14224 人学习</em>
+					</div>
+					<div class="cf">
+						<div class="lessonicon-box" style="bottom: 7px;">
+							<a target="_blank" href="http://www.jikexueyuan.com/course/phpbase/">
+								<img width="16" src="https://a1.jikexueyuan.com/home/201604/28/538c/5721889c1d714.png" alt="phpbase" title="phpbase">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>                                                            <li>
+		<div class="lessonimg-box">
+			<i class="vip-icon"></i>
+
+			<span class="learn-statu">
+				学到第
+				5
+				课时
+			</span>
+
+			<a href="http://www.jikexueyuan.com/course/208.html" target="_blank">
+				<img src="https://a1.jikexueyuan.com/home/201408/24/6a01/53f9ece25b4c0.jpg" class="lessonimg" title="JavaScript浏览器对象" alt="JavaScript浏览器对象">
+				<div class="lessonplay" >
+					<i class="playericon"></i>
+				</div>
+				<div class="lessonplay2">
+					<div class="cricle">
+						<div class="mask"></div>
+						<div class="left">
+							<div class="bg"></div>
+						</div>
+						<div class="cright">
+							<div class="bg"></div>
+						</div>
+						<div class="text"></div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="lesson-infor" style="height: 88px;">
+			<h2 class="lesson-info-h2">
+				<a href="http://www.jikexueyuan.com/course/208.html" target="_blank">JavaScript浏览器对象</a>
+			</h2>
+			<p style="opacity: 0; height: 0px; display: none;">本课主要讲解JavaScript的浏览器对象，包括计时器、History、Location和Cookies等</p>
+			<div class="timeandicon">
+				<div class="cf">
+					<dl>
+						<dd class="mar-b8">
+							<i class="time-icon"></i><em>5
+							课时 30分钟</em>
+						</dd>
+						<dd class="zhongji" style="display: none;">
+							<i class="xinhao-icon"></i><em>初级</em>
+						</dd>
+					</dl>
+					<em class="learn-number" style="display: none;">23749 人学习</em>
+				</div>
+				<div class="cf">
+					<div class="lessonicon-box" style="bottom: 7px;">
+						<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+							<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</li>
+	<li>
+	<div class="lessonimg-box">
+		<i class="vip-icon"></i>
+
+		<span class="learn-statu">
+			学到第
+			3
+			课时
+		</span>
+
+		<a href="http://www.jikexueyuan.com/course/1379.html" target="_blank">
+			<img src="https://a1.jikexueyuan.com/home/201604/25/1966/571dd2f73ea5c.jpg" class="lessonimg" title="JavaScript正则表达式" alt="JavaScript正则表达式">
+			<div class="lessonplay">
+				<i class="playericon"></i>
+			</div>
+			<div class="lessonplay2">
+				<div class="cricle">
+					<div class="mask"></div>
+					<div class="left">
+						<div class="bg"></div>
+					</div>
+					<div class="cright">
+						<div class="bg"></div>
+					</div>
+					<div class="text"></div>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="lesson-infor" style="height: 88px;">
+		<h2 class="lesson-info-h2">
+			<a href="http://www.jikexueyuan.com/course/1379.html" target="_blank">JavaScript正则表达式</a>
+		</h2>
+		<p style="opacity: 0; height: 0px; display: none;">本课程学习JavaScript正则表达式，正则表达式（英语：Regular Expression，在代码中常简写为regex、regexp或RE）使用单个字符串来描述、匹配一系列符合某个句法规则的字符串搜索模式。搜索模式可用于文本搜索和文本替换。</p>
+		<div class="timeandicon">
+			<div class="cf">
+				<dl>
+					<dd class="mar-b8">
+						<i class="time-icon"></i><em>4
+						课时 31分钟</em>
+					</dd>
+					<dd class="zhongji" style="display: none;">
+						<i class="xinhao-icon2"></i><em>中级</em>
+					</dd>
+				</dl>
+				<em class="learn-number" style="display: none;">16278 人学习</em>
+			</div>
+			<div class="cf">
+				<div class="lessonicon-box" style="bottom: 7px;">
+					<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+						<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+ <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		5
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/195.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201408/17/c479/53f059c7d1e10.jpg" class="lessonimg" title="JavaScript内置对象" alt="JavaScript内置对象">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/195.html" target="_blank">JavaScript内置对象</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课主要讲解JavaScript的内置对象，包括字符串、日期对象、数组对象和Math对象。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>5
+					课时 38分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">28235 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="vip-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/185.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201408/12/cdb8/53ea16bcd7f0f.jpg" class="lessonimg" title="JavaScript DOM对象" alt="JavaScript DOM对象">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/185.html" target="_blank">JavaScript DOM对象</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课主要讲解JavaScriptDOM对象，通过对DOM对象的使用操作HTML和CSS</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>4
+					课时 24分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">34355 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/184.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201408/12/abbe/53ea0675f1114.jpg" class="lessonimg" title="JavaScript异常处理和事件处理" alt="JavaScript异常处理和事件处理">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/184.html" target="_blank">JavaScript异常处理和事件处理</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课讲解JavaScript异常和事件，让学员学习到出现异常如何处理以及事件的触发</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>2
+					课时 21分钟</em>
+				</dd>
+				<dd class="zhongji" style="display:none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number">33407 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom:8px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		6
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/180.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201408/10/bd8c/53e7059c107e4.jpg" class="lessonimg" title="JavaScript函数" alt="JavaScript函数">
+		<div class="lessonplay" >
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2" >
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/180.html" target="_blank">JavaScript函数</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课主要讲解JavaScript函数，让学员掌握函数的应用以及变量的作用域</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>6
+					课时 29分钟</em>
+				</dd>
+				<dd class="zhongji" style="display:none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number">39990 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom:8px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="vip-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		6
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/178.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201408/07/6b61/53e37a9abd818.jpg" class="lessonimg" title="JavaScript语法详解" alt="JavaScript语法详解">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/178.html" target="_blank">JavaScript语法详解</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课讲解JavaScript语法，让学员掌握运算符、控制语句和循环语句可以让你对js有一个全面的认识。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>7
+					课时 41分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">42480 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/javascript/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201606/12/69f4/575cbb2ff238d.png" alt="javascript" title="javascript">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/370.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201411/19/5982/546c03d0afd29.jpg" class="lessonimg" title="HTML5开发项目实战:导航栏" alt="HTML5开发项目实战:导航栏">
+		<div class="lessonplay" >
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/370.html" target="_blank">HTML5开发项目实战:导航栏</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课对导航栏进行讲解，并完成水平导航栏和垂直导航栏的制作，根据导航栏的风格不同，使用CSS样式完成不同的导航栏效果。让学员掌握对导航栏的制作。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>4
+					课时 42分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">19561 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/practice/">
+					<img width="16" src="https://wirrorcdn.jikexueyuan.com/category/advance.png" alt="practice" title="practice">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		3
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/1785.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201508/06/488d/55c2cf7c86f1b.jpg" class="lessonimg" title="老式浏览器支持HTML5和CSS3" alt="老式浏览器支持HTML5和CSS3">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/1785.html" target="_blank">老式浏览器支持HTML5和CSS3</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课程学习老式浏览器如何应用HTML5和CSS3.</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>3
+					课时 11分钟</em>
+				</dd>
+				<dd class="zhongji" style="display:none;">
+					<i class="xinhao-icon2"></i><em>中级</em>
+				</dd>
+			</dl>
+			<em class="learn-number">9491 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom:8px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/css/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201604/29/d204/57231d72e4397.png" alt="css" title="css">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="vip-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201601/12/5643/56946646c4e83.jpg" class="lessonimg" title="CSS3 实现 3D 立方体旋转和图形挤压变形动画特效" alt="CSS3 实现 3D 立方体旋转和图形挤压变形动画特效">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/2433.html" target="_blank">CSS3 实现 3D 立方体旋转和图形挤压变形动画特效</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课程讲解，使用 CSS3，完成 3D 立方体旋转和图形挤压变形动画特效，能够熟练运用 CSS3中，有关 3D 空间的相关属性，实现立体动画效果，并能理解和掌握 CSS3 中 filter 属性，在项目中的运用。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>4
+					课时 0分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon2"></i><em>中级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">5121 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/css3/">
+					<img width="16" src="https://wirrorcdn.jikexueyuan.com/category/webbase.png" alt="css3" title="css3">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/458.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201501/05/b2ac/54a9eb2844d89.jpg" class="lessonimg" title="彩虹糖粒子特效" alt="彩虹糖粒子特效">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/458.html" target="_blank">彩虹糖粒子特效</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课程讲解 Cocos2d-x 使用代码和粒子一起完成动态切割图片并喷射出彩色的粒子效果。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>3
+					课时 26分钟</em>
+				</dd>
+				<dd class="zhongji" style="display:none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number">4194 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom:8px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/cocos/">
+					<img width="16" src="https://wirrorcdn.jikexueyuan.com/category/games.png" alt="cocos" title="cocos">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		1
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/469.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201606/12/8c01/575cd08eccc50.jpg" class="lessonimg" title="C语言常用运算符" alt="C语言常用运算符">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/469.html" target="_blank">C语言常用运算符</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课讲解在 C 语言中的常用运算符，内容包括数学运算、逻辑运算、位运算，通过本课学习将掌握 C 语言中常用的运算技能。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>4
+					课时 39分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">13586 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/c/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201412/31/5d76/54a367ad6bae6.png" alt="c" title="c">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="vip-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		1
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/43.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201605/13/1f65/57357ebca5630.jpg" class="lessonimg" title="Android项目开发实战-2048游戏" alt="Android项目开发实战-2048游戏">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/43.html" target="_blank">Android项目开发实战-2048游戏</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课程学习创建2048游戏项目，掌握2048游戏的开发思路、游戏算法，独立开发一款属于自己的2048。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>12
+					课时 75分钟</em>
+				</dd>
+				<dd class="zhongji" style="display:none;">
+					<i class="xinhao-icon2"></i><em>中级</em>
+				</dd>
+			</dl>
+			<em class="learn-number">48509 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom:8px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/android/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/00a1/54578d8e652c3.png" alt="android" title="android">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+
+	<span class="learn-statu">
+		学到第
+		1
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/127.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201407/10/c6e4/53bdf15c29478.jpg" class="lessonimg" title="HTML5特性简介" alt="HTML5特性简介">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/127.html" target="_blank">HTML5特性简介</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本套课程主要来了解HTML5，包含，简介、集成开发环境的搭建和HTML基础。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>3
+					课时 19分钟</em>
+				</dd>
+				<dd class="zhongji" style="display:none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number">136910 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom:8px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/html5/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201604/29/8ccb/57231d532b9a5.png" alt="html5" title="html5">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="vip-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		1
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/877.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201505/12/06b2/55515b529a163.jpg" class="lessonimg" title="HTML5 编辑 API 之 Range 对象（一）" alt="HTML5 编辑 API 之 Range 对象（一）">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/877.html" target="_blank">HTML5 编辑 API 之 Range 对象（一）</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本套课程讲解 HTML5 编辑 API 之 Range 对象，包含基本概念，selectNode 方法、selectNodeContents 方法、deleteContents 方法、setStart 方法、setEnd 方法、setStartBefore 方法、setStartAfter 方法、setEndBefore 方法和 setEndAfter 方法。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>3
+					课时 20分钟</em>
+				</dd>
+				<dd class="zhongji" style="display:none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number">16200 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom:8px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/html5/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201604/29/8ccb/57231d532b9a5.png" alt="html5" title="html5">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/700.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201504/09/e9c7/5525dad3e29d5.jpg" class="lessonimg" title="HTML 5 与HTML 4 的区别" alt="HTML 5 与HTML 4 的区别">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/700.html" target="_blank">HTML5与HTML4的区别</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本套课程主要讲解HTML5与HTML4 的区别。包含 HTML5 的推出理由及目标、新增的元素和废除的元素以及新增的属性和废除的属性。让学员掌握 HTML 5 与 HTML 4 之间的区别。
+	</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>3
+					课时 20分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">50474 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/html5/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201604/29/8ccb/57231d532b9a5.png" alt="html5" title="html5">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		4
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/816.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201504/30/0f69/55418a8c975fc.jpg" class="lessonimg" title="Android 常用控件" alt="Android 常用控件">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/816.html" target="_blank">Android 常用控件</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课讲解 Android 开发中几种常用的控件，内容包括下拉列表、日期选择器、时间选择器、单项选择、多项选择，通常学习使用这些常用的控件而掌握使用 Android 控件的能用方法</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>5
+					课时 20分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">16935 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/android/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/00a1/54578d8e652c3.png" alt="android" title="android">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/708.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201504/10/f0c7/552728d5ded0c.jpg" class="lessonimg" title="Android Fragment" alt="Android Fragment">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/708.html" target="_blank">Android Fragment</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课讲解在 Android 中Fragment的用法，内容包括使用Fragment、Fragment的生命周期、带侧栏的Activity、Tabbed Activity。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>4
+					课时 39分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">28188 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/android/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/00a1/54578d8e652c3.png" alt="android" title="android">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="rz-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/768.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201504/22/504d/5537010b3f7ff.jpg" class="lessonimg" title="Android 日志系统" alt="Android 日志系统">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/768.html" target="_blank">Android 日志系统</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课讲解 Android 日志系统的使用，内容包括 System.out、System.err 的用法，Log.i、Log.d、Log.w、Log.e、Log.v 函数的用法，如何在 Android Studio 中对 Android 日志进行分类过滤，如何在 DDMS 中对 Android 日志进行分类过滤。</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>3
+					课时 16分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">14070 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/android/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/00a1/54578d8e652c3.png" alt="android" title="android">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>                                                            <li>
+<div class="lessonimg-box">
+	<i class="vip-icon"></i>
+
+	<span class="learn-statu">
+		学到第
+		2
+		课时
+	</span>
+
+	<a href="http://www.jikexueyuan.com/course/749.html" target="_blank">
+		<img src="https://a1.jikexueyuan.com/home/201504/20/4c7c/55345ae96a65b.jpg" class="lessonimg" title="Android 广播接收器 BroadcastReceiver" alt="Android 广播接收器 BroadcastReceiver">
+		<div class="lessonplay">
+			<i class="playericon"></i>
+		</div>
+		<div class="lessonplay2">
+			<div class="cricle">
+				<div class="mask"></div>
+				<div class="left">
+					<div class="bg"></div>
+				</div>
+				<div class="cright">
+					<div class="bg"></div>
+				</div>
+				<div class="text"></div>
+			</div>
+		</div>
+	</a>
+</div>
+<div class="lesson-infor" style="height: 88px;">
+	<h2 class="lesson-info-h2">
+		<a href="http://www.jikexueyuan.com/course/749.html" target="_blank">Android 广播接收器 BroadcastReceiver</a>
+	</h2>
+	<p style="opacity: 0; height: 0px; display: none;">本课将对 BrocastReceiver 进行详细的讲解，内容包括在 Manifest 文件中配置BroadcastReceiver，动态注册和注销 BroadcastReceiver，BroadcastReceiver 的优先级</p>
+	<div class="timeandicon">
+		<div class="cf">
+			<dl>
+				<dd class="mar-b8">
+					<i class="time-icon"></i><em>3
+					课时 17分钟</em>
+				</dd>
+				<dd class="zhongji" style="display: none;">
+					<i class="xinhao-icon"></i><em>初级</em>
+				</dd>
+			</dl>
+			<em class="learn-number" style="display: none;">14383 人学习</em>
+		</div>
+		<div class="cf">
+			<div class="lessonicon-box" style="bottom: 7px;">
+				<a target="_blank" href="http://www.jikexueyuan.com/course/android/">
+					<img width="16" src="https://a1.jikexueyuan.com/home/201411/03/00a1/54578d8e652c3.png" alt="android" title="android">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>
+</ul>
+</div>
+
+
+
+
+
+<div class="pages-cont">
+<div class="pages cf">
+<a href="javascript:;" class="li-page-disable pgFirst">首页</a> 
+<a href="javascript:;" class="li-page-disable pgPrev">上一页</a>
+ <a href="secondLevelMenu.html" class="li-page-active page-number">1</a>
+ <a href="secondLevelMenu-learnning2/secondLevelMenu-learnning2.html" class="page-number">2</a>
+ <a href="" class="pgNext">下一页</a> 
+ <a href="" class="pgLast">尾页</a>
+ </div>
+ </div>
+	
+	</section>
+</div>
+	
+	</div>
+
+	<!--<div id="footer" class="mar-t50" style="position: relative; width: 100%; bottom: 0px;">
+		<link rel="stylesheet" href="./我的课程 - 极客学院学习中心_files/footer.css">
+		<div class="w-1000 copyright">
+			Copyright © 2013-2017&nbsp;<strong><a href="http://www.jikexueyuan.com/" target="_blank">jikexueyuan.com</a></strong> All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210
+		</div>
+	</div>-->
+	<div id="footer" class="mar-t50">
+
+	<link rel="stylesheet" href="http://e.jikexueyuan.com/headerandfooter/css/footer.css?t=1495686193000">
+	<div class=" jkinfor-block">
+		<div class="jkinfor cf">
+			<div class="jk-logo">
+				<img src="http://e.jikexueyuan.com/headerandfooter/images/jk-logo-footer.png?t=1495686193000">
+				<p>极客学院，编程是一种信仰！</p>
+			</div>
+			<dl>
+				<dt>职业学院</dt>
+				<dd><a target="_blank" href="http://www.jikexueyuan.com/zhiye/web">Web前端工程师</a></dd>
+				<dd><a target="_blank" href="http://www.jikexueyuan.com/zhiye/python">Python Web工程师</a></dd>
+				<dd><a target="_blank" href="http://www.jikexueyuan.com/zhiye/go">Go语言工程师</a></dd>
+				<!--<dd><a target="_blank" href="//j.jikexueyuan.com/train/android?huodong=jiuye_android_in">Android学院</a></dd>-->
+				<dd><a target="_blank" href="http://www.jikexueyuan.com/zhiye/ios">iOS工程师</a></dd>
+				<dd><a target="_blank" href="http://www.jikexueyuan.com/zhiye/wechatapp">微信小程序工程师</a></dd>
+			</dl>
+			<dl>
+				<dt>会员课程</dt>
+				<dd><a target="_blank" href="http://www.jikexueyuan.com/course/">课程库</a></dd>
+				<dd><a target="_blank" href="http://www.jikexueyuan.com/path/">知识体系图</a></dd>
+				<dd><a target="_blank" href="http://ke.jikexueyuan.com/zhiye/">职业路径图</a></dd>
+				<dd><a target="_blank" href="http://ke.jikexueyuan.com/xilie/">系列课程</a></dd>
+				<dd><a target="_blank" href="http://www.jikexueyuan.com/tag/">课程标签</a></dd>
+			</dl>
+			<dl>
+				<dt>极客社区</dt>
+				<dd><a target="_blank" href="http://wenda.jikexueyuan.com/">技术问答</a></dd>
+				<dd><a target="_blank" href="http://wiki.jikexueyuan.com/">Wiki</a></dd>
+				<dd><a target="_blank" href="http://download.jikexueyuan.com/">资源下载</a></dd>
+				<dd><a target="_blank" href="http://qun.jikexueyuan.com/">社群</a></dd>
+			</dl>
+			<dl>
+				<dt>其他</dt>
+				<dd><a target="_blank" href="http://help.jikexueyuan.com/">关于我们</a></dd>
+				<dd><a target="_blank" href="http://help.jikexueyuan.com/join.html">加入我们</a></dd>
+				<dd><a target="_blank" href="http://j.jikexueyuan.com/evangelist/apply">讲师合作</a></dd>
+				<dd><a target="_blank" href="http://help.jikexueyuan.com/contact.html">联系我们</a></dd>
+				<dd><a target="_blank" href="http://www.jikexueyuan.com/friendlink.html">友情链接</a></dd>
+			</dl>
+
+			<div class="jk-down">
+				<p class="hot-tel">服务热线:400-678-8266</p>
+				<div class="downCon down-ios">
+					<img src="http://e.jikexueyuan.com/headerandfooter/images/app.png?t=1495686193000" class="twoCode" alt="下载二维码"> iPhone
+				</div>
+				<div class="downCon down-and">
+					<img src="http://e.jikexueyuan.com/headerandfooter/images/app.png?t=1495686193000" class="twoCode" alt="下载二维码"> Android
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="w-1000 copyright">
+		Copyright © 2013-2017&nbsp;<strong><a href="http://www.jikexueyuan.com/" target="_blank">jikexueyuan.com</a></strong> All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210
+		<a href="//qun.jikexueyuan.com/jikexueyuan/topic/430" target="_blank" class="down-wechat"></a>
+		<a href="//weibo.com/jikexueyuan" target="_blank" class="down-sina"></a>
+		<a style="display:block; margin: 15px auto 0" id="___szfw_logo___" href="https://credit.szfw.org/CX20160908025320080267.html" target="_blank"><img src="http://e.jikexueyuan.com/headerandfooter/images/cert.png?t=1495686193000" width="60px" border="0"></a> <script type="text/javascript">(function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();</script>
+	</div>
+</div>
+</body>

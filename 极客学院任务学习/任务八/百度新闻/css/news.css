@@ -1,0 +1,143 @@
+/*全局*/
+html{
+	font-size: 62.5%;
+	font-family: arial;
+	height: 100%;
+}
+body{
+	width: 100%
+}
+.container{
+	width: 100%
+}
+a{
+	text-decoration: none;
+}
+
+
+/*header*/
+.newsHeader {
+    background: #3e98f0 url(https://gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/n/nvn/static/news/imgs/bg-news-logo_344ce44.png) no-repeat;
+    background-position: center 10px;
+    background-size: 65px auto;
+}
+
+header {
+    width: 100%;
+    height: 48px;
+    background-color: #3e98f0;
+    border-bottom: 1px solid #5dabf0;
+    position: relative;
+    z-index: 10;
+}
+
+.cf::before,
+.cf::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+header a {
+    width: 34px;
+    height: 100%;
+    background: url(https://gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/n/nvn/static/news/imgs/icon-bg_6e9bc53.png) no-repeat;
+    background-size: 40px 500px;
+}
+
+body .float-left {
+    float: left;
+}
+body .float-right {
+    float: right;
+}
+header .baidu-icon {
+    background-position: center 6px;
+    margin-left: 8px;
+}
+header .profile-icon {
+    background-position: center -461px;
+    margin-left: 10px;
+}
+header .subscribe-icon {
+    background-position: center -105px;
+    margin-right: 8px;
+}
+header .search-icon {
+    background-position: center -160px;
+    margin-right: 10px;
+}
+/*nav*/
+nav{
+	background-color: #3e98f0;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+nav ul li{
+	display:inline-block;
+	width: 16.66%;
+	font-size: 1.44rem;
+	text-align: center;
+}
+nav a{
+	display: inline-block;
+	padding: 1rem 0;
+	color: #fff;
+	/*text-indent:1rem;
+	letter-spacing:1rem;
+*/
+}
+nav ul i{
+	display: inline-block;
+	height: 2rem;
+	float: right;
+	border-right: 1px solid #fff;
+	position: relative;
+	top:1.1rem;
+}
+/*nav ul li span{
+	margin-right: 1.35rem;
+	margin-left: 1.35rem;
+}*/
+nav ul #int{
+	width: 33.32%;
+}
+/*新闻部分 container*/
+.news-lists{
+	margin: 1rem 0 0;
+	padding: 0 1.3rem;
+	list-style: none;
+}
+.news-lists h1{
+	font-size: 1.3rem;
+}
+
+.news-list{
+	display: flex;
+	border-bottom: 1px solid #E6E6E6;
+	margin-top: 1rem;
+}
+.newsimg{
+	flex: 1;
+}
+.newscontent{
+	flex: 2;
+	padding: 0 0.8rem;
+}
+.newsimg img{
+	width: 100%;
+	height:auto;
+}
+.newscontent span{
+	display: inline-block;
+}
+.newscontent span:nth-child(2){
+	margin-left: .8rem;
+	border: 1px solid #ff0000;
+	border-radius: 3px;
+	color: #FF0000;
+}

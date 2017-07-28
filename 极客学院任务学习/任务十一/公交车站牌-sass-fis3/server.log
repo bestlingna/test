@@ -1,0 +1,5 @@
+ Listening on http://127.0.0.1:8080
+127.0.0.1 - GET / HTTP/1.1 200 462 - 12.854 ms
+127.0.0.1 - GET /BusStopBoard.html HTTP/1.1 200 9575 - 95.289 ms
+127.0.0.1 - GET /BusStopBoardCss_cec3dcc.css HTTP/1.1 200 5133 - 5.837 ms
+127.0.0.1 - GET /img/pay_0298e87.jpg HTTP/1.1 200 6278 - 6.619 ms

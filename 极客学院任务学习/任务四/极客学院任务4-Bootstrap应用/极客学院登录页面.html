@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<meta charset="UTF-8"/>
+	<style type="text/css"></style>
+	<link rel="shortcut icon" href="img/jike.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="jikeLoading.css">
+	<title>极客学院登录页面</title>
+</head>
+<body>
+	<div class="warpper">
+		<header  id="header" class="header">
+		<div id="logo" align="center">
+			<a href="http://www.jikexueyuan.com">
+			<img src="img/logo.png">
+			</a>
+		</div>
+			
+		</header>
+		
+	<div id="container">
+		<!--<div class="passport-sign">
+			<div class="main-form main-form-sign">
+				<div class="passport-tab" id="login-tabs">
+					<div class="tabs">
+						<ul>
+							<li class="active">登录</li>
+						</ul>
+					</div>
+					<div class="tabbed"></div>
+				</div>
+			</div>
+		</div>-->
+<div class="head">登录</div>
+		<div class="form">
+		
+		<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="inputEmail">请输入账号</label>
+    <div class="controls">
+     <label class="password-label" for="TPL_password_1"><i class="icon1" title="密码登录"><img src="img/men.png"></i></label>
+    <input type="text" id="inputEmail" placeholder="手机/用户名/邮箱">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputPassword">请输入密码</label>
+    <div class="controls">
+    <label class="password-label2" for="TPL_password_1"><i class="icon1" title="密码登录"><img src="img/lock.png"></i></label>
+      <input type="password" id="inputPassword" placeholder="请输入6~32位密码">
+    </div>
+  </div>
+  <div class="control-group2">
+    <div class="controls2">
+      <label class="checkbox">
+        <input type="checkbox"> 记住我
+      </label>
+      <a href="http://passport.jikexueyuan.com/sso/forget">忘记密码</a>
+      </div>
+  </div>
+  <button type="submit" class="btn" onclick="window.open('极客学院学习中心/极客个人学习中心.html')">登录</button>
+</form>
+</div>
+<div class="aside">
+	<div class="register">
+	<span class="nR">没有账号？</span>
+	<a href="http://passport.jikexueyuan.com/sso/reg_phone" id="Re" >新用户注册</a>
+	</div>
+	<div class="anotherWay">
+		<span class="As">合作方账号登录</span>
+		<div class="anotherWayIcon">
+		<div >
+			<a href="https://graph.qq.com/oauth/show?which=Login&display=pc&response_type=code&client_id=101119675&redirect_uri=http://passport.jikexueyuan.com/connect/success?t=qq&state=7655fd0c43af4a3d2be2178b4a0f20fc&scope=get_user_info"><img src="img/qq3.png" class="qq"></a>
+			</div>
+			<div>
+			<a href="https://api.weibo.com/oauth2/authorize?client_id=945339614&redirect_uri=http%3A%2F%2Fpassport.jikexueyuan.com%2Fconnect%2Fsuccess%3Ft%3Dweibo&response_type=code"><img src="img/sina3.png" class="sina"></a>
+			</div>
+			<div>
+             <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxadfc3188c82ef252&redirect_uri=http%3A%2F%2Fpassport.jikexueyuan.com%2Fconnect%2Fsuccess%3Ft%3Dweixin&response_type=code&scope=snsapi_login&t=weixin&state=weixin#wechat_redirect" class="a3"><img src="img/wechat3.png" class="wechat"></a>
+             </div>
+
+		</div>
+
+	</div>
+</div>
+	</div>
+	</div>
+	</body>
+
+</html>

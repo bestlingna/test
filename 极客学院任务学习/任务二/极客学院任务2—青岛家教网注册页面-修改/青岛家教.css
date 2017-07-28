@@ -1,0 +1,40 @@
+
+.p12{
+	font-size: 14px;
+	color: #666;
+}
+
+
+.p13 {
+    font-size: 13px;
+    line-height: 150%;
+    color: #000000;
+}
+.p14{
+	
+	float: left;
+
+	}
+	.p15
+	{
+		float: right;
+	}
+	.p16{
+		margin-top: 50px;}
+		.p17{
+			margin-top:0px; 
+			background-image: url(blsl.jpg);
+			background-repeat: repeat;
+
+		}
+		.p18{
+			margin: 0 auto;
+			background-color: white;
+			width: 800px;
+			border-radius: 20px;
+		
+        
+
+
+
+		}

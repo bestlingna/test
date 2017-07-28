@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+	<style type="text/css">
+	*{
+	margin: 0px;
+	padding: 0px;
+}
+.warpper{
+	width: 100%;
+	height: 100%;
+	
+}
+.scoreJudgment {
+	width: 800px;
+	height: 250px;
+	margin: 0 auto;
+	padding-top: 100px;
+	border:2px solid #ff9800;
+}
+.scoreJudgment form{
+width: 700px;
+height: 100px;
+margin: 0 auto;
+}
+.scoreJudgment label{
+	font-size: 40px;
+	font-weight: bold;
+    float: left;
+}
+.scoreJudgment input{
+  width: 300px;
+  height: 40px;
+  border:1px solid #03a9f4;
+float: left;
+
+}
+.scoreJudgment button{
+	width: 90px;
+	height: 40px;
+	margin-left: 20px;
+	background:;
+	float: left;
+}
+#grades{
+	width: 300px;
+	height:100px;
+	margin: 0 auto;
+	border:1px solid #ff9800;
+	font-size: 25px;
+}
+	</style>
+	<title>学员等级评分</title>
+
+
+
+   
+</head>
+<body>
+<div class="warpper">
+<div class="scoreJudgment ">
+	<form>
+	    <label for="scoreInput">请输入分数:</label>
+		<input type="number" name="scoreInput" id="scoreIn" placeholder="请输入数字"/>
+		<button type="button" class="btn" onclick="grade()">判断</button>
+	</form>
+	<div id="grades">
+		
+	</div>
+</div>	 
+</div>
+
+</body>
+<script >
+ function grade(){
+ 	var n =document.getElementById("scoreIn").value;
+ 	 if (!n){
+ 	document.getElementById("grades").innerHTML="请输入0到100之内的数字"
+ 	}
+ 	else if (n<0){
+ 		document.getElementById("grades").innerHTML="请输入0到100之内的数字"
+ 	}
+ 	else if (n<50)
+ 	    {
+ 		document.getElementById("grades").innerHTML="您为六等学生";
+ 		}
+ 	else if (n<60)
+ 	    {
+ 		document.getElementById("grades").innerHTML="您为五等学生";
+ 		}
+    else if (n<70) 
+        {
+ 		document.getElementById("grades").innerHTML="您为四等学生";
+ 		}
+ 	else if (n<80)
+ 	   {
+ 		document.getElementById("grades").innerHTML="您为三等学生";
+ 		}
+ 	else if (n<90)
+ 	   {
+ 		document.getElementById("grades").innerHTML="您为二等学生";
+ 		}
+ 	else if (n<101)
+ 	    {
+ 		document.getElementById("grades").innerHTML="您为一等学生";
+ 		}
+ 	else if (n>101)
+ 	    {
+ 		document.getElementById("grades").innerHTML="请输入0到100之内的数字";
+ 		}	
+}
+</script>
+</html>
